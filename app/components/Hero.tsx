@@ -13,11 +13,14 @@ export default function Hero() {
   {/* TEXT */}
   <div className="text-left space-y-4">
 
-    <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-      Ahoj, jsem <RotatingText />
+    <h1 className="mb-4 text-4xl sm:text-6xl lg:text-6xl font-extrabold leading-tight">
+      <span className="text-gray-500">Ahoj, jsem </span>
+            <span>
+              <RotatingText />
+            </span>
     </h1>
 
-    <p className="text-gray-600 max-w-md leading-relaxed text-base md:text-lg">
+    <p className="text-gray-600 text-base sm:text-lg mb-6 max-w-md">
       Píšu knihy, kreslím a maluji, točím videa.
     </p>
 
@@ -29,7 +32,7 @@ export default function Hero() {
 
   {/* IMAGE */}
   <div className="flex justify-center md:justify-end">
-    <div className="w-[220px] h-[220px] md:w-[300px] md:h-[300px] relative">
+    <div className="relative w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] lg:w-[360px] lg:h-[360px]">
       <Image
         src="/images/nancy_cari.jpg"
         alt="Hero image"
@@ -44,7 +47,7 @@ export default function Hero() {
     {/* bottom - LATEST */}
      <div className="mt-16 flex flex-col items-center">
 
-        <h2 className="text-xs uppercase tracking-widest text-gray-400">
+        <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4 md:mb-2">
           Poslední přidané
         </h2>
 
