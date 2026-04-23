@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { latestItems } from "@/lib/latest";
+import Image from "next/image";
 
 export default function HeroCarousel() {
   const items = latestItems.slice(0, 3);
@@ -34,7 +35,7 @@ export default function HeroCarousel() {
               href={`/books/${current.slug}`}
               className="block border rounded overflow-hidden shadow-sm"
             >
-              <img src={current.image} className="w-full h-100 object-cover" />
+              <Image src={current.image} alt={current.title} width={100} height={100} className="max-w-xs rounded-full transition duration-300 ease-in-out hover:scale-110" />
 
               <div className="p-3">
                 <h3 className="font-semibold text-sm">{current.title}</h3>
@@ -55,9 +56,9 @@ export default function HeroCarousel() {
             href={`/books/${item.slug}`}
             className="block border rounded overflow-hidden hover:shadow-md transition"
           >
-            <img src={item.image} className="w-full h-100 object-cover" />
+            <Image src={item.image} alt={item.title} width={100} height={100} className="w-full h-100 object-cover max-w-xs transition duration-300 ease-in-out hover:scale-105" />
 
-            <div className="p-3">
+            <div className="p-3 z-10">
               <h3 className="font-semibold text-sm">{item.title}</h3>
             </div>
           </Link>

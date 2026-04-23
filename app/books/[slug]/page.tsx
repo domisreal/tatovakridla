@@ -1,7 +1,23 @@
 import { books } from "../data";
 import { notFound } from "next/navigation";
+import {Metadata} from "next";
 
-export default async function BookDetail({ params }: { params: Promise<{ slug: string }> }) {
+type Props = { params: Promise<{ slug: string }> }
+
+export async function generateMetadata({params}: Props): Promise<Metadata> {
+    const { slug } = await params;
+    const book = books.find((b) => b.slug === slug);
+
+    return {
+        title: book?.title,
+        description: book?.description,
+        openGraph: {
+            images: book?.image
+        }
+    }
+}
+
+export default async function BookDetail({ params }: Props) {
   const { slug } = await params;
   const book = books.find((b) => b.slug === slug);
 
