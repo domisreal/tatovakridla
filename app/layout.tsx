@@ -1,12 +1,9 @@
 // app/layout.tsx
-import "./globals.css";
-import Navbar from "./components/Navbar";
+import "@/style/globals.css";
+import Navbar from "@/components/Navbar";
+import { ReactNode } from "react";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="cs">
       <body className="bg-white text-black">

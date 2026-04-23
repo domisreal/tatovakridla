@@ -14,9 +14,7 @@ export default function BooksPage() {
             className="p-4 border rounded hover:opacity-70 transition"
           >
             <h2 className="font-semibold">{book.title}</h2>
-            <p className="text-sm text-gray-600">
-              {book.description}
-            </p>
+            <p className="text-sm text-gray-600">{book.description}</p>
           </Link>
         ))}
       </div>

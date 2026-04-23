@@ -10,9 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full border-b relative z-50">
-
       <div className="px-6 py-4 flex justify-between items-center">
-
         {/* LOGO */}
         <Link href="/" className="font-bold tracking-wide">
           Nancy a tvorba
@@ -20,9 +18,9 @@ export default function Navbar() {
 
         {/* SOCIALS (always visible) */}
         <div className="flex items-center gap-4 text-gray-600">
-          <FaInstagram size={18} />
-          <FaYoutube size={18} />
-          <FaFacebook size={18} />
+          <FaInstagram size={18} className="cursor-pointer" />
+          <FaYoutube size={18} className="cursor-pointer" />
+          <FaFacebook size={18} className="cursor-pointer" />
         </div>
 
         {/* LINKS desktop */}
@@ -33,46 +31,31 @@ export default function Navbar() {
         </div>
 
         {/* HAMBURGER */}
-        <button
-          className="md:hidden"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? (
-            <XMarkIcon className="w-6 h-6" />
-          ) : (
-            <Bars3Icon className="w-6 h-6" />
-          )}
+        <button className="md:hidden" onClick={() => setOpen(!open)}>
+          {open ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
         </button>
-
       </div>
 
       {/* PARTIAL OVERLAY (ONLY HERO AREA FEEL) */}
       {open && (
-  <div className="absolute right-6 top-full z-40 mt-2">
+        <div className="absolute right-6 top-full z-40 mt-2">
+          <div className="shadow-lg rounded-lg p-4">
+            <div className="flex flex-col gap-4 text-sm text-center">
+              <Link href="/about" onClick={() => setOpen(false)}>
+                O mně
+              </Link>
 
-    <div className="shadow-lg rounded-lg p-4">
+              <Link href="/books" onClick={() => setOpen(false)}>
+                Knihy
+              </Link>
 
-      <div className="flex flex-col gap-4 text-sm text-center">
-
-        <Link href="/about" onClick={() => setOpen(false)}>
-          O mně
-        </Link>
-
-        <Link href="/books" onClick={() => setOpen(false)}>
-          Knihy
-        </Link>
-
-        <Link href="/drawings" onClick={() => setOpen(false)}>
-          Kresby
-        </Link>
-
-      </div>
-
-    </div>
-
-  </div>
-)}
-
+              <Link href="/drawings" onClick={() => setOpen(false)}>
+                Kresby
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
