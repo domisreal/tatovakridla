@@ -11,7 +11,7 @@ import {Metadata} from "next";
 export function generateMetadata(): Metadata {
     return {
         metadataBase: new URL("http://localhost:3000"),
-        title: "Nancy"
+        title: "Nancy a tvorba"
     }
 }
 

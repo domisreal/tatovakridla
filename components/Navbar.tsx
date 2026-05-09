@@ -4,9 +4,31 @@ import Link from "next/link";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+   useEffect(() => {
+    const media = window.matchMedia("(min-width: 768px)");
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      if (e.matches) {
+        setOpen(false);
+      }
+    };
+
+    media.addEventListener("change", handleChange);
+
+    return () => media.removeEventListener("change", handleChange);
+  }, []);
 
   return (
     <nav className="w-full border-b relative z-50">
@@ -18,9 +40,32 @@ export default function Navbar() {
 
         {/* SOCIALS (always visible) */}
         <div className="flex items-center gap-4 text-gray-600">
-          <FaInstagram size={18} className="cursor-pointer" />
-          <FaYoutube size={18} className="cursor-pointer" />
-          <FaFacebook size={18} className="cursor-pointer" />
+           <a
+          href="https://www.instagram.com/nancy_a_tvorba/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-pink-500 transition"
+        >
+          <FaInstagram size={18} />
+        </a>
+
+        <a
+          href="https://www.youtube.com/@nancykralova6492"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-red-500 transition"
+        >
+          <FaYoutube size={18} />
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61560069083239"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-600 transition"
+        >
+          <FaFacebook size={18} />
+        </a>
         </div>
 
         {/* LINKS desktop */}
@@ -28,6 +73,7 @@ export default function Navbar() {
           <Link href="/about">O mně</Link>
           <Link href="/books">Knihy</Link>
           <Link href="/drawings">Kresby</Link>
+          <Link href="/stories">Příběhy</Link>
         </div>
 
         {/* HAMBURGER */}
@@ -36,26 +82,46 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* PARTIAL OVERLAY (ONLY HERO AREA FEEL) */}
+      {/* PARTIAL OVERLAY WHILE HAMBURGER MENU IS OPEN */}
       {open && (
-        <div className="absolute right-6 top-full z-40 mt-2">
-          <div className="shadow-lg rounded-lg p-4">
-            <div className="flex flex-col gap-4 text-sm text-center">
-              <Link href="/about" onClick={() => setOpen(false)}>
-                O mně
-              </Link>
+  <div className="absolute top-full right-0 z-50">
+    
+    <div className="flex flex-col items-end gap-4 text-sm text-gray-800
+                    bg-white/60 backdrop-blur-md
+                    border border-white/40
+                     px-6 py-4 shadow-lg">
 
-              <Link href="/books" onClick={() => setOpen(false)}>
-                Knihy
-              </Link>
+      <Link
+        href="/about"
+        onClick={() => setOpen(false)}
+        className="hover:text-black transition">
+        O mně
+      </Link>
 
-              <Link href="/drawings" onClick={() => setOpen(false)}>
-                Kresby
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
+      <Link
+        href="/books"
+        onClick={() => setOpen(false)}
+        className="hover:text-black transition">
+        Knihy
+      </Link>
+
+      <Link
+        href="/drawings"
+        onClick={() => setOpen(false)}
+        className="hover:text-black transition">
+        Kresby
+      </Link>
+
+      <Link
+        href="/stories"
+        onClick={() => setOpen(false)}
+        className="hover:text-black transition">
+        Příběhy
+      </Link>
+    </div>
+
+  </div>
+)}
     </nav>
   );
 }

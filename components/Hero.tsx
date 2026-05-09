@@ -39,8 +39,8 @@ export default function Hero() {
 
       {/* bottom - LATEST */}
       <div className="mt-16 flex flex-col items-center">
-        <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4 md:mb-2">
-          Poslední přidané
+        <h2 className="text-xl uppercase tracking-widest text-gray-400 mb-4 md:mb-2">
+          Novinky z tvorby
         </h2>
 
         <div className="flex justify-center">
