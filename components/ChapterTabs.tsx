@@ -40,10 +40,7 @@ export default function ChapterTabs({ chapters }: { chapters: Chapter[] }) {
       </div>
 
       {/* OBSAH */}
-      <div className="mt-6 p-4 border rounded bg-gray-50">
-        {content}
-      </div>
-
+      <div className="mt-6 p-4 border rounded bg-gray-50">{content}</div>
     </div>
   );
 }

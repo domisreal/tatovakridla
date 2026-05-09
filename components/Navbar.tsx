@@ -16,7 +16,7 @@ export default function Navbar() {
     setOpen(false);
   }, [pathname]);
 
-   useEffect(() => {
+  useEffect(() => {
     const media = window.matchMedia("(min-width: 768px)");
 
     const handleChange = (e: MediaQueryListEvent) => {
@@ -40,32 +40,32 @@ export default function Navbar() {
 
         {/* SOCIALS (always visible) */}
         <div className="flex items-center gap-4 text-gray-600">
-           <a
-          href="https://www.instagram.com/nancy_a_tvorba/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-pink-500 transition"
-        >
-          <FaInstagram size={18} />
-        </a>
+          <a
+            href="https://www.instagram.com/nancy_a_tvorba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-500 transition"
+          >
+            <FaInstagram size={18} />
+          </a>
 
-        <a
-          href="https://www.youtube.com/@nancykralova6492"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-red-500 transition"
-        >
-          <FaYoutube size={18} />
-        </a>
+          <a
+            href="https://www.youtube.com/@nancykralova6492"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-red-500 transition"
+          >
+            <FaYoutube size={18} />
+          </a>
 
-        <a
-          href="https://www.facebook.com/profile.php?id=61560069083239"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-600 transition"
-        >
-          <FaFacebook size={18} />
-        </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61560069083239"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition"
+          >
+            <FaFacebook size={18} />
+          </a>
         </div>
 
         {/* LINKS desktop */}
@@ -84,44 +84,47 @@ export default function Navbar() {
 
       {/* PARTIAL OVERLAY WHILE HAMBURGER MENU IS OPEN */}
       {open && (
-  <div className="absolute top-full right-0 z-50">
-    
-    <div className="flex flex-col items-end gap-4 text-sm text-gray-800
+        <div className="absolute top-full right-0 z-50">
+          <div
+            className="flex flex-col items-end gap-4 text-sm text-gray-800
                     bg-white/60 backdrop-blur-md
                     border border-white/40
-                     px-6 py-4 shadow-lg">
+                     px-6 py-4 shadow-lg"
+          >
+            <Link
+              href="/about"
+              onClick={() => setOpen(false)}
+              className="hover:text-black transition"
+            >
+              O mně
+            </Link>
 
-      <Link
-        href="/about"
-        onClick={() => setOpen(false)}
-        className="hover:text-black transition">
-        O mně
-      </Link>
+            <Link
+              href="/books"
+              onClick={() => setOpen(false)}
+              className="hover:text-black transition"
+            >
+              Knihy
+            </Link>
 
-      <Link
-        href="/books"
-        onClick={() => setOpen(false)}
-        className="hover:text-black transition">
-        Knihy
-      </Link>
+            <Link
+              href="/drawings"
+              onClick={() => setOpen(false)}
+              className="hover:text-black transition"
+            >
+              Kresby
+            </Link>
 
-      <Link
-        href="/drawings"
-        onClick={() => setOpen(false)}
-        className="hover:text-black transition">
-        Kresby
-      </Link>
-
-      <Link
-        href="/stories"
-        onClick={() => setOpen(false)}
-        className="hover:text-black transition">
-        Příběhy
-      </Link>
-    </div>
-
-  </div>
-)}
+            <Link
+              href="/stories"
+              onClick={() => setOpen(false)}
+              className="hover:text-black transition"
+            >
+              Příběhy
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
