@@ -1,4 +1,6 @@
-export const drawings = [
+import { DrawingsData } from "@/src/types/common";
+
+export const drawings: DrawingsData[] = [
   {
     slug: "1",
     title: "Portrét BTS",

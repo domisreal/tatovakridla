@@ -2,8 +2,9 @@ import { drawings } from "../data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-export default function DrawingDetail({ params }: { params: { slug: string } }) {
-  const drawing = drawings.find((d) => d.slug === params.slug);
+export default async function DrawingDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const drawing = drawings.find((d) => d.slug === slug);
 
   if (!drawing) return notFound();
 

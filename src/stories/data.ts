@@ -1,4 +1,6 @@
-export const stories = [
+import { StoriesData } from "@/src/types/common";
+
+export const stories: StoriesData[] = [
   {
     slug: "posledni-noc",
     title: "Poslední noc",
