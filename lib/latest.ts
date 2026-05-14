@@ -1,6 +1,6 @@
 import { books } from "@/app/books/data";
 import { drawings } from "@/app/drawings/data";
-import { stories } from "@/src/stories/data";
+import { stories } from "@/app/stories/data";
 
 export const latestItems = [
   ...books.map((book) => ({
@@ -23,7 +23,7 @@ export const latestItems = [
     type: "story" as const,
     slug: story.slug,
     title: story.title,
-    image: story.image,
+    image: "/images/story.jpg",
     createdAt: story.createdAt,
   })),
-].sort((a, b) => b.createdAt - a.createdAt);
+].sort((a, b) => b.createdAt - a.createdAt || a.slug.localeCompare(b.slug));

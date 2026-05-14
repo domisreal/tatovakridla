@@ -8,10 +8,20 @@ import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 export default function HeroCarousel() {
-  const items = latestItems.slice(0, 3); // vezmeme jen 5 nejnovějších položek
+  const items = latestItems.slice(0, 3); // vezmeme jen 3 nejnovější položky
   const [index, setIndex] = useState(0);
 
   const current = items[index];
+
+  const STORY_IMAGE = "/images/story.jpg";
+
+  const getImage = (item: (typeof items)[number]) => {
+    if (item.type === "story") {
+      return STORY_IMAGE;
+    }
+
+    return item.image;
+  };
 
   const next = () => setIndex((p) => (p + 1) % items.length);
   const prev = () => setIndex((p) => (p - 1 + items.length) % items.length);
@@ -81,7 +91,7 @@ export default function HeroCarousel() {
 
                   {/* IMAGE */}
                   <Image
-                    src={current.image}
+                    src={getImage(current)}
                     alt={current.title}
                     fill
                     sizes="(max-width: 768px) 180px, 300px"
@@ -130,7 +140,7 @@ export default function HeroCarousel() {
                 </span>
               </div>
               <Image
-                src={item.image}
+                src={getImage(item)}
                 alt={item.title}
                 width={100}
                 height={100}

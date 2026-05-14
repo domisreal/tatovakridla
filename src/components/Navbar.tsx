@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav className="w-full border-b relative z-50">
       <div className="px-6 py-4 flex justify-between items-center">
         {/* LOGO */}
-        <Link href="/public" className="font-bold tracking-wide">
+        <Link href="/" className="font-bold tracking-wide">
           Nancy a tvorba
         </Link>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
           <Link href="/about">O mně</Link>
           <Link href="/books">Knihy</Link>
           <Link href="/drawings">Kresby</Link>
-          <Link href="/src/stories">Příběhy</Link>
+          <Link href="/stories">Příběhy</Link>
         </div>
 
         {/* HAMBURGER */}
@@ -109,7 +109,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/src/stories"
+              href="/stories"
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >

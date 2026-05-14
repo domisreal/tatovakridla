@@ -1,3 +1,4 @@
+import { toDate } from "@/lib/formatDate";
 import { DrawingsData } from "@/src/types/common";
 
 export const drawings: DrawingsData[] = [
@@ -7,7 +8,7 @@ export const drawings: DrawingsData[] = [
     image: "/images/drawings/BTS.webp",
     width: 1600,
     height: 2000,
-    createdAt: 1748000000000,
+    createdAt: toDate("2024-06-01"),
   },
   {
     slug: "2",
@@ -15,7 +16,7 @@ export const drawings: DrawingsData[] = [
     image: "/images/drawings/CAT.webp",
     width: 2000,
     height: 1400,
-    createdAt: 1748500000000,
+    createdAt: toDate("2024-06-02"),
   },
   {
     slug: "3",
@@ -23,7 +24,7 @@ export const drawings: DrawingsData[] = [
     image: "/images/drawings/GOT.webp",
     width: 1400,
     height: 2000,
-    createdAt: 1749000000000,
+    createdAt: toDate("2024-06-03"),
   },
   {
     slug: "4",
@@ -31,6 +32,6 @@ export const drawings: DrawingsData[] = [
     image: "/images/drawings/Suga.webp",
     width: 1800,
     height: 1800,
-    createdAt: 1749500000000,
+    createdAt: toDate("2024-06-04"),
   },
 ];

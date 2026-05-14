@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { drawings } from "./data";
+import { formatDate } from "@/lib/formatDate";
 
 export default function DrawingsPage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -63,7 +64,7 @@ export default function DrawingsPage() {
             />
 
             {/* HOVER TITLE */}
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end justify-center p-3">
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-end p-3">
               <p className="text-white text-sm text-center">{item.title}</p>
             </div>
           </button>
@@ -90,7 +91,9 @@ export default function DrawingsPage() {
           {/* CONTENT */}
           <div className="max-w-5xl max-h-[90vh] p-4 text-center">
             {/* TITLE */}
+
             <h2 className="text-white mb-4 text-sm tracking-wide opacity-80">{current.title}</h2>
+            <p className="text-white/60 text-xs mb-4">{formatDate(current.createdAt)}</p>
 
             <Image
               src={current.image}
