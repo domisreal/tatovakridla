@@ -20,7 +20,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="cs">
       <body className="bg-white text-black">
         <Navbar />
-        {children}
+        <div className={"container m-auto"}>
+        {children}</div>
       </body>
     </html>
   );

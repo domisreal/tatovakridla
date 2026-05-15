@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import { useEffect } from "react";
+import { Link } from "./Link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav className="w-full border-b relative z-50">
       <div className="px-6 py-4 flex justify-between items-center">
         {/* LOGO */}
-        <Link href="/" className="font-bold tracking-wide">
+        <Link href="/" className="font-bold tracking-wide hover:text-blue-300">
           Nancy a tvorba
         </Link>
 
