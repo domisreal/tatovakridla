@@ -25,21 +25,21 @@ export default function Navbar() {
 
   return (
     <nav className="w-full border-b relative z-50">
-      <div className="px-6 py-4 flex justify-between items-center">
+      <div className="px-6 py-4 flex justify-between items-center relative">
         {/* LOGO */}
         <Link href="/" className="font-bold tracking-wide hover:text-blue-300">
           Nancy a tvorba
         </Link>
 
         {/* SOCIALS (always visible) */}
-        <div className="flex items-center gap-4 text-gray-600">
+        <div className="flex items-center gap-4 text-gray-600 md:absolute md:left-1/2 md:-translate-x-1/2">
           <a
             href="https://www.instagram.com/nancy_a_tvorba/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-500 transition"
           >
-            <FaInstagram size={18} />
+            <FaInstagram size={20} />
           </a>
 
           <a
@@ -48,7 +48,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="hover:text-red-500 transition"
           >
-            <FaYoutube size={18} />
+            <FaYoutube size={20} />
           </a>
 
           <a
@@ -57,7 +57,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition"
           >
-            <FaFacebook size={18} />
+            <FaFacebook size={20} />
           </a>
         </div>
 

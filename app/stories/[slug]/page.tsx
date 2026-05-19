@@ -1,6 +1,5 @@
 import { stories } from "../data";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import cs from "@/public/dictionaries/cs.json";
 
 type Props = {

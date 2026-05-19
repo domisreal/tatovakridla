@@ -94,7 +94,7 @@ export default function HeroCarousel() {
                     src={getImage(current)}
                     alt={current.title}
                     fill
-                    sizes="(max-width: 768px) 180px, 300px"
+                    sizes="(max-width: 768px) 360px, 420px"
                     className="object-cover"
                   />
                 </div>
@@ -133,7 +133,7 @@ export default function HeroCarousel() {
             className="group block border rounded overflow-hidden hover:shadow-md transition"
           >
             {/* BADGE */}
-            <div className="relative">
+            <div className="relative h-[420px] aspect-[2/3] mx-auto">
               <div className="absolute top-2 left-2 z-10">
                 <span className="bg-white/70 text-black backdrop-blur-md text-[10px] uppercase tracking-widest px-2 py-1 rounded">
                   {labels[item.type]}
@@ -142,9 +142,9 @@ export default function HeroCarousel() {
               <Image
                 src={getImage(item)}
                 alt={item.title}
-                width={100}
-                height={100}
-                className="w-full h-100 object-cover max-w-xs transition duration-300 ease-in-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 360px, 420px"
+                className="object-cover transition duration-300 ease-in-out group-hover:scale-105"
               />
             </div>
 

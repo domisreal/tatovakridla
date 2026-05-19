@@ -54,14 +54,19 @@ export default function DrawingsPage() {
             onClick={() => setSelectedIndex(index)}
             className="group relative overflow-hidden rounded-lg"
           >
-            {/* IMAGE */}
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={item.width}
-              height={item.height}
-              className="w-full h-auto object-cover transition duration-300 group-hover:scale-105"
-            />
+            {/* IMAGE WRAPPER */}
+            <div
+              className="relative w-full"
+              style={{ aspectRatio: `${item.width} / ${item.height}` }}
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-contain transition duration-300 group-hover:scale-105"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
 
             {/* HOVER TITLE */}
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-end p-3">
@@ -95,13 +100,15 @@ export default function DrawingsPage() {
             <h2 className="text-white mb-4 text-sm tracking-wide opacity-80">{current.title}</h2>
             <p className="text-white/60 text-xs mb-4">{formatDate(current.createdAt)}</p>
 
-            <Image
-              src={current.image}
-              alt={current.title}
-              width={current.width}
-              height={current.height}
-              className="max-h-[85vh] w-auto h-auto object-contain mx-auto"
-            />
+            <div className="max-w-5xl max-h-[85vh] w-[90vw] h-[85vh] flex items-center justify-center mx-auto p-4">
+              <Image
+                src={current.image}
+                alt={current.title}
+                width={current.width}
+                height={current.height}
+                className="max-w-full max-h-full w-auto h-auto object-contain"
+              />
+            </div>
           </div>
 
           {/* RIGHT */}

@@ -1,11 +1,13 @@
 export enum ChapterTabEnum {
   DANIEL = "DANIEL",
   MAJDA = "MAJDA",
+  STRAZCI_PROLOG = "STRAZCI_PROLOG",
+  STRAZCI_MATT = "STRAZCI_MATT",
+  STRAZCI_ISABELA = "STRAZCI_ISABELA",
 }
 
 export type Chapter = {
   title: string;
-  file: string;
   type: ChapterTabEnum;
 };
 
