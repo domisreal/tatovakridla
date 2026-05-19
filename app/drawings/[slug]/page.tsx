@@ -12,13 +12,18 @@ export default async function DrawingDetail({ params }: { params: Promise<{ slug
     <main className="px-6 py-10">
       <h1 className="text-3xl font-bold mb-6">{drawing.title}</h1>
 
-      <Image
-        src={drawing.image}
-        alt={drawing.title}
-        width={drawing.width}
-        height={drawing.height}
-        className="rounded"
-      />
+      <div
+        className="relative w-full max-w-4xl mx-auto"
+        style={{ aspectRatio: `${drawing.width} / ${drawing.height}` }}
+      >
+        <Image
+          src={drawing.image}
+          alt={drawing.title}
+          fill
+          className="object-contain"
+          sizes="(max-width: 768px) 100vw, 800px"
+        />
+      </div>
     </main>
   );
 }

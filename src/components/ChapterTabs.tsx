@@ -5,7 +5,7 @@ import cs from "@public/dictionaries/cs.json";
 import { Chapter, ChapterTabEnum } from "@/src/types/common";
 
 export default function ChapterTabs({ chapters }: { chapters: Chapter[] }) {
-  const [activeTab, setActiveTab] = useState<ChapterTabEnum>(ChapterTabEnum.DANIEL);
+  const [activeTab, setActiveTab] = useState<ChapterTabEnum>(chapters[0].type);
 
   return (
     <div className="mt-8">
