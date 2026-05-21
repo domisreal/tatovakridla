@@ -24,10 +24,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full border-b relative z-50">
+    <nav className="w-full top-0 z-50 backdrop-blur-xl bg-[#f8f1e8]/85 border-[#e7d8c8] shadow-sm border-b">
       <div className="px-6 py-4 flex justify-between items-center relative">
         {/* LOGO */}
-        <Link href="/" className="font-bold tracking-wide hover:text-blue-300">
+        <Link href="/" className="font-bold text-xl tracking-wide hover:text-[#2EC4B6]">
           Nancy a tvorba
         </Link>
 
