@@ -79,7 +79,7 @@ export default function HeroCarousel() {
             >
               <Link
                 href={getHref(current)}
-                className="group block border rounded-md overflow-hidden shadow-sm hover:shadow-md transition"
+                className="group block border-2 border-[#d8c4af] shadow-[0_10px_30px_rgba(0,0,0,0.05)] rounded overflow-hidden hover:shadow-md transition bg-[#fffdfa]"
               >
                 <div className="h-[240px] overflow-hidden relative">
                   {/* BADGE */}
@@ -100,7 +100,7 @@ export default function HeroCarousel() {
                 </div>
 
                 <div className="h-[72px] p-3">
-                  <h3 className="font-semibold text-sm line-clamp-2">{current.title}</h3>
+                  <h3 className="font-semibold text-lg line-clamp-2">{current.title}</h3>
                 </div>
               </Link>
             </motion.div>
@@ -125,12 +125,12 @@ export default function HeroCarousel() {
       </div>
 
       {/* DESKTOP GRID */}
-      <div className="hidden md:grid grid-cols-3 gap-6 mt-6">
+      <div className="hidden md:grid grid-cols-3 gap-8 mt-10">
         {items.map((item) => (
           <Link
             key={item.slug}
             href={getHref(item)}
-            className="group block border rounded overflow-hidden hover:shadow-md transition"
+            className="group block border-2 border-[#d8c4af] shadow-[0_10px_30px_rgba(0,0,0,0.05)] rounded overflow-hidden hover:shadow-md transition bg-[#fffdfa]"
           >
             {/* BADGE */}
             <div className="relative h-[420px] aspect-[2/3] mx-auto">
@@ -149,7 +149,7 @@ export default function HeroCarousel() {
             </div>
 
             <div className="h-[72px] p-3 z-10">
-              <h3 className="font-semibold text-sm line-clamp-2">{item.title}</h3>
+              <h3 className="font-semibold text-lg line-clamp-2">{item.title}</h3>
             </div>
           </Link>
         ))}

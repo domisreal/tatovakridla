@@ -5,14 +5,14 @@ import RotatingText from "./RotatingText";
 
 export default function Hero() {
   return (
-    <section className="px-6 py-16">
+    <section className="relative px-6 py-24 overflow-hidden">
       {/* TOP (text+image) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-6 md:py-10">
         {/* TEXT */}
         <div className="text-left space-y-4">
           <h1 className="mb-4 text-4xl sm:text-6xl lg:text-6xl font-extrabold leading-tight">
-            <span className="text-gray-500">Ahoj, jsem </span>
-            <span>
+            <span className="text-[#8B6B4E]">Ahoj, jsem </span>
+            <span className="text-[#2EC4B6]">
               <RotatingText />
             </span>
           </h1>
@@ -21,7 +21,7 @@ export default function Hero() {
             Píšu knihy, kreslím a maluji, točím videa.
           </p>
 
-          <p className="text-sm text-gray-400">Welcome to my creative space.</p>
+          <p className="text-sm text-gray-400">Vítejte v mém kreativním koutku.</p>
         </div>
 
         {/* IMAGE */}
@@ -31,7 +31,7 @@ export default function Hero() {
               src="/images/nancy_cari.jpg"
               alt="Hero image"
               fill
-              className="object-cover rounded-full"
+              className="object-cover rounded-full border-4 border-white shadow-2xl"
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Hero() {
 
       {/* bottom - LATEST */}
       <div className="mt-16 flex flex-col items-center">
-        <h2 className="text-xl uppercase tracking-widest text-gray-400 mb-4 md:mb-2">
+        <h2 className="text-xl uppercase tracking-[0.25em] text-[#8B6B4E] font-bold mb-6">
           Novinky z tvorby
         </h2>
 

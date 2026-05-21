@@ -26,25 +26,20 @@ export default async function BookDetail({ params }: Props) {
   if (!book) return notFound();
 
   return (
-    <main className="px-6 py-10">
-      <div className="flex flex-col md:flex-row gap-8">
+    <main className="px-6 py-16">
+      <div className="grid md:grid-cols-[300px_1fr] gap-14 items-start">
         {/* image */}
-        <Image
-          src={book.image}
-          alt={book.title}
-          width={250}
-          height={380}
-          className="rounded shadow"
-          loading="eager"
-        />
+        <Image src={book.image} alt={book.title} width={250} height={380} loading="eager" />
 
         {/* text */}
         <div>
-          <h1 className="text-3xl font-bold">{book.title}</h1>
+          <h1 className="text-5xl md:text-6xl font-semibold leading-tight book-title">
+            {book.title}
+          </h1>
 
-          <p className="mt-4 text-gray-600">{book.description}</p>
+          <p className="mt-4 text-slate-500 leading-8 text-lg">{book.description}</p>
 
-          <p className="mt-6">{book.anotation}</p>
+          <p className="mt-8 text-lg leading-9 text-slate-700">{book.anotation}</p>
         </div>
       </div>
 
@@ -61,7 +56,11 @@ export default async function BookDetail({ params }: Props) {
         )}
 
         {book.buyLink && (
-          <a href={book.buyLink} target="_blank" className="text-blue-500 underline">
+          <a
+            href={book.buyLink}
+            target="_blank"
+            className="inline-flex items-center px-6 py-3 rounded-full bg-[#2EC4B6] text-white font-medium shadow-lg shadow-[#2EC4B6]/30 hover:bg-[#21a89b] hover:scale-105 transition-all duration-300"
+          >
             Koupit knihu
           </a>
         )}

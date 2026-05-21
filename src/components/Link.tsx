@@ -12,9 +12,11 @@ type LinkProps = {
 export function Link({ children, href, className, onClick }: LinkProps) {
   const pathname = usePathname();
   function setClassName() {
-    let classNameString = className ? className : "text-xl hover:text-blue-300";
+    let classNameString = className
+      ? className
+      : "text-xl tracking-wide text-slate-700 hover:text-[#2EC4B6] transition-colors duration-300";
     if (pathname === href) {
-      classNameString += " text-blue-300";
+      classNameString += " text-[#2EC4B6]";
     }
     return classNameString;
   }

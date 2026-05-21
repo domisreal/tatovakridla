@@ -3,6 +3,18 @@ import "@/style/globals.css";
 import Navbar from "@/src/components/Navbar";
 import { ReactNode } from "react";
 import { Metadata } from "next";
+import { Inter, Cormorant_Garamond } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+  weight: ["400", "500", "600", "700"],
+});
 
 /**
  * Na odkzu najdes info o metadatech jak s nimi pracovat a co nastavit
@@ -18,10 +30,9 @@ export function generateMetadata(): Metadata {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="cs">
-      <body className="bg-white text-black">
+      <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
         <Navbar />
-        <div className={"container m-auto"}>
-        {children}</div>
+        <div className={"container m-auto"}>{children}</div>
       </body>
     </html>
   );

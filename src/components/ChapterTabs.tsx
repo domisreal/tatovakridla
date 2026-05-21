@@ -9,16 +9,21 @@ export default function ChapterTabs({ chapters }: { chapters: Chapter[] }) {
 
   return (
     <div className="mt-8">
-      <p className="mb-4 text-2xl text-center font-bold">Ukázka z knihy</p>
+      <p className="mb-8 text-4xl text-center font-semibold">Ukázka z knihy</p>
       {/* TABY */}
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-3 justify-center">
         {chapters.map((ch, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(ch.type)}
-            className={`px-3 py-1 border rounded ${
-              activeTab === ch.type ? "bg-black text-white" : ""
-            }`}
+            className={`
+px-5 py-2 rounded-full transition-all duration-300 border
+${
+  activeTab === ch.type
+    ? "bg-[#8B6B4E] text-white border-[#2EC4B6] shadow-md"
+    : "bg-white text-slate-600 border-slate-200 hover:border-[#8B6B4E] hover:text-[#8B6B4E]"
+}
+`}
           >
             {ch.title}
           </button>
@@ -26,7 +31,9 @@ export default function ChapterTabs({ chapters }: { chapters: Chapter[] }) {
       </div>
 
       {/* OBSAH */}
-      <div className="mt-6 p-4 border rounded bg-gray-50">{cs[`books.title.${activeTab}`]}</div>
+      <div className="mt-6 p-8 rounded-3xl bg-white shadow-lg border border-slate-100 leading-8 text-slate-700">
+        {cs[`books.title.${activeTab}`]}
+      </div>
     </div>
   );
 }
