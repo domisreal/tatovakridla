@@ -24,10 +24,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full top-0 z-50 backdrop-blur-xl bg-[#f8f1e8]/85 border-[#e7d8c8] shadow-sm border-b">
+    <nav className="sticky top-0 relative z-50 bg-[#f8f1e8]/95 backdrop-blur-md border-b border-[#d8c2aa] shadow-md">
       <div className="px-6 py-4 flex justify-between items-center relative">
         {/* LOGO */}
-        <Link href="/" className="font-bold text-xl tracking-wide hover:text-[#2EC4B6]">
+        <Link href="/" className="font-bold tracking-wide hover:text-[#2EC4B6]">
           Nancy a tvorba
         </Link>
 
@@ -70,14 +70,14 @@ export default function Navbar() {
         </div>
 
         {/* HAMBURGER */}
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
+        <button type="button" className="md:hidden" onClick={() => setOpen(!open)}>
           {open ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
         </button>
       </div>
 
       {/* PARTIAL OVERLAY WHILE HAMBURGER MENU IS OPEN */}
       {open && (
-        <div className="absolute top-full right-0 z-50">
+        <div className="absolute top-full right-0 z-50 pointer-events-auto">
           <div
             className="flex flex-col items-end gap-4 text-sm text-gray-800
                     bg-white/60 backdrop-blur-md
