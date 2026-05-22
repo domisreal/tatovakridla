@@ -1,3 +1,5 @@
+"use client";
+
 import LinkNext from "next/link";
 import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
