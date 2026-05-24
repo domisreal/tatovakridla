@@ -2,10 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const words = ["Nancy", "spisovatelka", "umělkyně"];
+import { useTranslations } from "next-intl";
 
 export default function RotatingText() {
+  const t = useTranslations("hero.rotating");
+
+  const words = [t("nancy"), t("writer"), t("artist")];
+
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -14,7 +17,7 @@ export default function RotatingText() {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
     <span className="inline-flex items-baseline h-[1em] min-w-[13ch] justify-start">
@@ -28,7 +31,7 @@ export default function RotatingText() {
             duration: 0.6,
             ease: "easeInOut",
           }}
-          className="block"
+          className="block font-cormorant"
         >
           {words[index]}
         </motion.span>

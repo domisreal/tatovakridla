@@ -1,13 +1,76 @@
 {
   "navbar": {
-    "about": "About me",
+    "about": "About",
     "books": "Books",
     "drawings": "Drawings",
     "stories": "Stories"
   },
 
+  "hero": {
+    "rotating": {
+      "nancy": "Nancy",
+      "writer": "writer",
+      "artist": "artist"
+    },
+    "hello": "Hello, I am ",
+    "description": "I write books, draw, paint and make videos.",
+    "welcome": "Welcome to my creative world.",
+    "latest": "Latest creations"
+  },
+
+  "footer": {
+    "description": "A creative world with drawings, books and stories.",
+    "navigation": "Navigation",
+    "about": "About",
+    "books": "Books",
+    "drawings": "Drawings",
+    "stories": "Stories",
+    "contact": "Contact",
+    "copyright": "Copyright © 2026 Nancy and Creation | Created with ❤️ by Dominik Král"
+  },
+
+  "about": {
+    "title": "About me",
+    "interviews": "Interviews",
+
+    "paragraphs": {
+      "p1": "I started writing because I wanted to learn more about the unfinished trilogy Guardians of Time by Marianne Curley. Between the ages of 13 and 18, I wrote my own continuation.",
+      "p2": "That was when I realized how much I loved creating stories, and at sixteen, I began thinking about my own original world. That was also when my dream of publishing a book was born.",
+      "p3": "Besides writing, I love drawing and artistic creation, which is why I attended an art school.",
+      "p4": "After school, life took me to Scotland, where I spent four wonderful years that brought me a lot of experience and inspiration.",
+      "p5": "Today I spend most of my time with my daughter and son, dedicating myself to creation while also studying Korean."
+    },
+
+    "videos": {
+      "kafe": "Coffee with Nancy Králová 2026",
+      "veletrh_brno_2025": "Book Fair BRNO 2025",
+      "veletrh_brno_2025_2": "Book Fair BRNO 2025 - Part 2"
+    }
+  },
+
   "books": {
-    "title": {
+    "title": "Books",
+    "buyButton": "Buy book",
+    "tatovaKridla": {
+      "description": "Initially playful, later a suspenseful and emotional novella, jointly narrated by a father and daughter despite being long separated by death.",
+      "annotation": "The story of 'Tatova Kridla' tells of Daniel, who became a father on the day of his death, and his daughter Majda, who became an orphan on the day of her birth. However, Daniel remains by Majda's side for the next sixteen years as her protector, guiding her through life with the help of angels. With the arrival of the angel of death, he faces unpredictable and challenging trials, and Daniel's protective wings go out of control."
+    },
+
+    "strazciCasuPouto": {
+      "description": "Unofficial 4th installment of the fantasy trilogy Guardians of Time by Marianne Curley.",
+      "annotation": "The battle is over, the prophecy has been fulfilled. However, it is not yet the end. The Guardians discover that Lathenie had been hiding her daughter Ellathea from them for several years, who immediately takes her mother's place as the Mistress of Chaos. She demonstrates her powerful abilities to the Guardians and wreaks havoc after destroying the entire Organization. Until a new short prophecy appears, revealing an ancient secret about four powerful weapons. In Ellathea's hands, they would be instruments for the destruction of Earth, and therefore the Guardians set out into distant history and all corners of the world to find these weapons before Ellathea. Will they succeed? Another battle is looming?"
+    },
+    "preview": "Book preview",
+    "chapterTitle": {
+      "DANIEL": "Daniel’s perspective",
+      "MAJDA": "Majda’s perspective",
+
+      "STRAZCI_PROLOG": "Prologue",
+      "STRAZCI_MATT": "Matt’s perspective",
+      "STRAZCI_ISABELA": "Isabela’s perspective"
+    },
+
+    "chapter": {
       "DANIEL": "I walk to her bed and lie down behind her, holding her gently as I stroke her hair. “I’m sorry, my dear. I didn’t mean this. Give her some time to process everything.”",
       "MAJDA": "I stretch out my hand, still trembling as it clutches the chair. Someone calls out: ‘Majda, stop!’ But did you even hear it?",
       "STRAZCI_PROLOG": "The battle is over. Two immortal siblings, bound by an endless rivalry, have finally destroyed each other.",

@@ -7,7 +7,6 @@ export enum ChapterTabEnum {
 }
 
 export type Chapter = {
-  title: string;
   type: ChapterTabEnum;
 };
 

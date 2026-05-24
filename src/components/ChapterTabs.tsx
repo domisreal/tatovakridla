@@ -5,12 +5,14 @@ import { useTranslations } from "next-intl";
 import { Chapter, ChapterTabEnum } from "@/src/types/common";
 
 export default function ChapterTabs({ chapters }: { chapters: Chapter[] }) {
-  const t = useTranslations("books.title");
+  const chapter = useTranslations("books.chapter");
+  const titleT = useTranslations("books.chapterTitle");
+  const common = useTranslations("books");
   const [activeTab, setActiveTab] = useState<ChapterTabEnum>(chapters[0].type);
 
   return (
     <div className="mt-8">
-      <p className="mb-8 text-4xl text-center font-semibold">Ukázka z knihy</p>
+      <p className="mb-8 text-4xl text-center font-semibold">{common("preview")}</p>
       {/* TABY */}
       <div className="flex flex-wrap gap-3 justify-center">
         {chapters.map((ch, index) => (
@@ -26,14 +28,14 @@ ${
 }
 `}
           >
-            {ch.title}
+            {titleT(ch.type)}
           </button>
         ))}
       </div>
 
       {/* OBSAH */}
       <div className="mt-6 p-8 rounded-3xl bg-white shadow-lg border border-slate-100 leading-8 text-slate-700">
-        {t(activeTab)}
+        {chapter(activeTab)}
       </div>
     </div>
   );
