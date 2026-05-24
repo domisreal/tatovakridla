@@ -66,10 +66,10 @@ export default function Navbar() {
 
         {/* LINKS desktop */}
         <div className="hidden md:flex gap-6 text-sm">
-          <NavLink href="/about">O mně</NavLink>
-          <NavLink href="/books">Knihy</NavLink>
-          <NavLink href="/drawings">Kresby</NavLink>
-          <NavLink href="/stories">Příběhy</NavLink>
+          <NavLink href="/about">{t("about")}</NavLink>
+          <NavLink href="/books">{t("books")}</NavLink>
+          <NavLink href="/drawings">{t("drawings")}</NavLink>
+          <NavLink href="/stories">{t("stories")}</NavLink>
           <LanguageSwitcher />
         </div>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
-              O mně
+              {t("about")}
             </NavLink>
 
             <NavLink
@@ -101,7 +101,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
-              Knihy
+              {t("books")}
             </NavLink>
 
             <NavLink
@@ -109,7 +109,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
-              Kresby
+              {t("drawings")}
             </NavLink>
 
             <NavLink
@@ -117,7 +117,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
-              Příběhy
+              {t("stories")}
             </NavLink>
           </div>
         </div>

@@ -6,8 +6,71 @@
     "stories": "Příběhy"
   },
 
+  "hero": {
+    "rotating": {
+      "nancy": "Nancy",
+      "writer": "spisovatelka",
+      "artist": "umělkyně"
+    },
+    "hello": "Ahoj, jsem ",
+    "description": "Píšu knihy, kreslím a maluji, točím videa.",
+    "welcome": "Vítejte v mém kreativním koutku.",
+    "latest": "Novinky z tvorby"
+  },
+
+  "footer": {
+    "description": "Kreativní koutek s přehledem kreseb, knih a příběhů.",
+    "navigation": "Navigace",
+    "about": "O mně",
+    "books": "Knihy",
+    "drawings": "Kresby",
+    "stories": "Příběhy",
+    "contact": "Kontakt",
+    "copyright": "Copyright © 2026 Nancy a tvorba | Vytvořil s ❤️ Dominik Král"
+  },
+
+  "about": {
+    "title": "O mně",
+    "interviews": "Rozhovory se mnou",
+
+    "paragraphs": {
+      "p1": "K psaní jsem se dostala díky touze dozvědět se víc o tehdy ukončené trilogii Strážci času od Marianne Curley. Mezi 13 a 18 lety jsem napsala vlastní pokračování.",
+      "p2": "Díky tomu jsem zjistila, jak moc mě baví vytváření příběhů, a v šestnácti jsem začala přemýšlet nad vlastním originálním světem. Tehdy vznikl i můj sen vydat knihu.",
+      "p3": "Kromě psaní miluji kreslení a jiné umělecké tvoření, a proto jsem vystudovala uměleckou školu.",
+      "p4": "Po škole mě život zavedl do Skotska, kde jsem strávila čtyři krásné roky, které mi přinesly spoustu zkušeností a inspirace.",
+      "p5": "Dnes trávím většinu času se svou dcerou a synem, věnuji se tvorbě a zároveň studuji korejštinu."
+    },
+
+    "videos": {
+      "kafe": "KAFE s Nancy Královou 2026",
+      "veletrh_brno_2025": "Knižní veletrh BRNO 2025",
+      "veletrh_brno_2025_2": "Knižní veletrh BRNO 2025 - 2. část"
+    }
+  },
+
   "books": {
-    "title": {
+    "title": "Knihy",
+    "buyButton": "Koupit knihu",
+    "tatovaKridla": {
+      "description": "Zprvu hravá, později napínavá emotivní novela, kterou společně vyprávějí táta s dcerou i přes to, že je dávno rozdělila smrt.",
+      "annotation": "Příběh Tátova křídla vypráví o Danielovi, který se stal otcem v den své smrti, a o jeho dceři Majdě, která se v den svého narození stala sirotkem. Daniel však následujících šestnáct let zůstává Majdě po boku v roli ochránce a za doprovodu a pomoci andělů ji vede co nejklidnější cestou životem. S příchodem anděla smrti ho však čekají nepředvídatelné a náročné výzvy a Danielova ochranářská křídla se vymykají kontrole."
+    },
+
+    "strazciCasuPouto": {
+      "description": "Neoficiální 4. díl fantasy trilogie Strážci času od Marianne Curleyové.",
+      "annotation": "Bitva skončila, Věštva byla naplněna. Ještě ovšem není konec. Strážci zjišťují, že Lathenie před nimi několik let skrývala svou dceru Ellatheu, která po své matce hned zaujímá místo Vládkyně Chaosu. Předvádí Strážcům své mocné schopnosti a phane po zničení celé Organizace. Dokud se neobjeví nová krátká věštba, která prozrazuje dávné tajemství o čtyřech mocných zbraních. V rukou Ellathey by byly nástrojem pro zničení Země, a proto se Strážci vydávají do daleké historie a do všech koutů světa, aby tyto zbraně našli dříve, než Ellathea. Podaří se jim to? Schýlí se k další bitvě?"
+    },
+    "preview": "Ukázka z knihy",
+    "chapterTitle": {
+      "DANIEL": "z pohledu Daniela",
+      "MAJDA": "z pohledu Majdy",
+
+      "STRAZCI_PROLOG": "Prolog",
+      "STRAZCI_MATT": "z pohledu Matta",
+      "STRAZCI_ISABELA": "z pohledu Isabely"
+    },
+
+    "chapter": {
       "DANIEL": "Přistupuju k její posteli a lehám si za její záda. Jednou rukou ji objímám a druhou hladím po vlasech. „Promiň mi to, srdíčko. Tohle jsem nechtěl. Promiň.“\nChvíli ještě pláče a já ji nepřestávám utěšovat. „To nic, všechno bude v pořádku. Jsem tu s tebou.“ Vypadá to, že se pomalu uklidňuje a já jí s úlevou dám pusu do vlasů. „Jen spi. Ráno ti bude líp, uvidíš. Spinkej.“\nS posledním trhaným nádechem zavírá oči a pak začíná klidně dýchat. Z mokrých dlouhých řas jí skápne ještě jedna slza a její tělo se pak celé schoulí do klubíčka, s plyšovou pandou stále v rukách.\n„Tak je to správně. Sladce spi a ať se ti zdají krásné sny. Já ti na ně dohlídnu, dobře?“\nStále u ní ležím a hladím ji po vlasech, a když usíná, hraju si se svou představivostí a vytvářím v hlavě pěknou scénu plnou neomezené fantazie, která se jí ve spánku promítne jako sen. Přesně jak mě to Helena učila. Ležím u ní další dlouhé hodiny, koukám na její profil spící tváře a přemýšlím, co bych měl teď udělat. Nechci, aby po tomhle přestala vytvářet své představy, kde se mnou mluví. Je to jediný přímý kontakt, který s ní mám, i když o tom netuší. Nechci se toho vzdát a nechci se vzdát naděje, že jednou přijde na to, kdo ji opravdu hlídá.\nUslyším za sebou jemný šustivý zvuk a otočím se za ním. Helena se tu zjevila a věnuje mi malý úsměv. „Máš hlavu plnou starostí.“\nNeodpovídám, jen vylézám z postele a přecházím na druhou stranu pokoje ke zdi, kde si sedám na zem a Helena vedle mě. Objímá mě jedním křídlem kolem ramen a já se opřu o její rameno.\n„Byl jsem na ni moc rychlý. Snažil jsem se jí prozradit pravdu o tom, že ji hlídám, ale domnívala se, že jsem jen její představa jako vždycky. A rozplakala se.“\n„I kdyby ti uvěřila, myslím, že by pro ni bylo i tak těžké ten fakt přijmout. Jak bys na něco takového reagoval ty?“\nNa chvíli nad tím přemýšlím a pokouším se vžít do Majdiny role. Pak jen zakroutím hlavou. „To nevím.“\n„Neměj strach, Danieli. Dej jí teď trochu času, ať si nechá vše projít hlavou a třeba se ti sama ozve.\"",
       "MAJDA": "Natahuju před sebe ruku, která se do teď křečovitě držela sedadla židle. Taky se chvěje, stejně jako má noha a zbytek těla. Chvíli se na třesoucí ruku koukám a pokouším se její chvění zastavit. Babička i Kristýnka, která mě doprovodila domů, mě obě ustaraně pozorují. Já se jejich pohledy snažím nevnímat a zhluboka, nebo aspoň tak jak to jen dovedu, se nadechuju. Pak nastavuju svoje odřené předloktí a loket babičce, která trpělivě vyčkává s dezinfekcí v ruce.\nDost jsem ji vyděsila, když mě a Kristýnce otevřela dveře a uviděla mě. Nebyla jsem moc schopná smysluplně mluvit, takže jí musela Kristýnka vysvětlit, co se stalo. V tu chvíli se vyděsila podruhé a pak mě sem posadila a začala ošetřovat.\n„Hotovo. Buď na to opatrná.“ Babička se narovnává a schovává dezinfekci a náplasti zpátky do lékárničky. „Chtěla bys něco k jídlu nebo k pití, Majdalénko? Potřebovala bys nějaký životabudič. Něco ti udělám.“\n„Nebyla to moje vina, že ne?“ vypadává ze mě.\n„Ta nehoda?“ ptá se Kristýnka.\nPřikyvuju a na okamžik se rozklepu o něco víc při vzpomínce na tu ženu a její zakrvácený obličej. „Co když se vybourala kvůli mně?“\n„Tak to vůbec nebylo. To si nesmíš dostat do hlavy,“ říká Kristýnka pohotově a sedá si přede mnou do dřepu. „Ta paní ztratila kontrolu nad řízením ještě před přechodem. Tebe pravděpodobně ani neviděla. Ať se ta nehoda stala jakkoliv, ty jsi za to vůbec nemohla, dobře? I lidi kolem, co to viděli, to říkali.“\nPokývnu hlavou a lehce si úlevou oddychnu.\n„Měla jsi neuvěřitelný štěstí. Na vteřinu jsem se bála, že jsi až moc blízko.“\n„Ne,“ zakroutím hlavou. „Nebylo to štěstí. Někdo mě zastavil.“\nKristýnka se na mě zmateně zamračí a já jí hned podávám vysvětlení: „Uslyšela jsem někoho volat a otočila jsem se a v tu chvíli kolem mě projelo to auto. Kdybych se nezastavila, tak by mě srazilo.“\n„A co jsi slyšela?“\n„Moje jméno. Někdo zavolal ‚Majdo, stůj‘. Ty jsi to neslyšela?“\nKristýnka vrtí hlavou a stále se zmateně mračí. Já zvedám pohled k babičce, která na mě kouká a zlehka se na mě usměje. „No, ne nadarmo se jim říká strážní andělé.“",
       "STRAZCI_PROLOG": "Bitva skončila. Oba nesmrtelní, sourozenci, kteří spolu celý svůj nekonečně dlouhý život soupeřili, se nakonec navzájem usmrtili. Jejich jména nebudou nikdy zapomenuta – Lorian a Lathenie. Jejich těla jsou odnášena do starodávných Athén, kde budou uložena do doby, než se postaví Chrám.\n\nPo lesích se rozléhá zoufalý křik lady Arabelly, jejíž žal zasahuje každého, kdo ho slyší. Nedokáže se smířit se ztrátou Loriana. Smutek zasahuje i Strážce, včetně Arkariana, který zjišťuje, že Lorian byl jeho otec.\n\nArkarian sleduje jeho bezvládné tělo a z očí mu tečou slzy. Po šesti stech letech neznal pravdu o svém původu a nyní ji poznává příliš pozdě. Vedle něj stojí Matt, Neriah a Isabela, Arkarianova spřízněná duše. Všichni truchlí nad Rochelle, která padla v boji po obětování vlastního života. Její smrt těžce doléhá na všechny.\n\nMatt si všímá její ruky visící z nosítek a potlačuje nutkání zasáhnout. Nakonec objímá Neriah a mlčky truchlí.\n\nPo skončení převozu se Matt ptá na Ethana, který zmizel. Ethan sedí v lese u kamene a odmítá odejít, dokud si nebude jistý Mardukovou smrtí. Obviňuje Matta z Rochelleiny smrti a posílá ho pryč.\n\nO několik dní později se Ethan stále uzavírá do sebe a komunikuje jen s iluzí Rochelle, kterou vytváří svou schopností.\n\nBěhem oslavy v Athénách Ethan uteče ze sálu a ostatní ho najdou na nádvoří s její iluzí. Matt i ostatní jsou přemoženi silnou bolestí a Ethanovo zoufalství vyvrcholí zhroucením, zatímco všichni sdílejí jeho ztrátu.",

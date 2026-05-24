@@ -1,9 +1,10 @@
-// app/components/Hero.tsx
 import HeroCarousel from "./HeroCarousel";
 import Image from "next/image";
 import RotatingText from "./RotatingText";
+import { getTranslations } from "next-intl/server";
 
-export default function Hero() {
+export default async function Hero() {
+  const t = await getTranslations("hero");
   return (
     <section className="relative px-6 py-24 overflow-hidden">
       {/* TOP (text+image) */}
@@ -11,17 +12,15 @@ export default function Hero() {
         {/* TEXT */}
         <div className="text-left space-y-4">
           <h1 className="mb-4 text-4xl sm:text-6xl lg:text-6xl font-extrabold leading-tight">
-            <span className="text-[#8B6B4E]">Ahoj, jsem </span>
+            <span className="text-[#8B6B4E]">{t("hello")}</span>
             <span className="text-[#2EC4B6]">
               <RotatingText />
             </span>
           </h1>
 
-          <p className="text-gray-600 text-base sm:text-lg mb-6 max-w-md">
-            Píšu knihy, kreslím a maluji, točím videa.
-          </p>
+          <p className="text-gray-600 text-base sm:text-lg mb-6 max-w-md">{t("description")}</p>
 
-          <p className="text-sm text-gray-400">Vítejte v mém kreativním koutku.</p>
+          <p className="text-sm text-gray-400">{t("welcome")}</p>
         </div>
 
         {/* IMAGE */}
@@ -40,7 +39,7 @@ export default function Hero() {
       {/* bottom - LATEST */}
       <div className="mt-16 flex flex-col items-center">
         <h2 className="text-xl uppercase tracking-[0.25em] text-[#8B6B4E] font-bold mb-6">
-          Novinky z tvorby
+          {t("latest")}
         </h2>
 
         <div className="flex justify-center">
