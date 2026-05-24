@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import cs from "@public/dictionaries/cs.json";
+import { useTranslations } from "next-intl";
 import { Chapter, ChapterTabEnum } from "@/src/types/common";
 
 export default function ChapterTabs({ chapters }: { chapters: Chapter[] }) {
+  const t = useTranslations("books.title");
   const [activeTab, setActiveTab] = useState<ChapterTabEnum>(chapters[0].type);
 
   return (
@@ -32,7 +33,7 @@ ${
 
       {/* OBSAH */}
       <div className="mt-6 p-8 rounded-3xl bg-white shadow-lg border border-slate-100 leading-8 text-slate-700">
-        {cs[`books.title.${activeTab}`]}
+        {t(activeTab)}
       </div>
     </div>
   );
