@@ -4,10 +4,13 @@ import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import { useEffect } from "react";
-import { Link } from "./Link";
+import NavLink from "@/src/components/NavLink";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/src/components/LangSwitch";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("navbar");
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 768px)");
@@ -27,9 +30,9 @@ export default function Navbar() {
     <nav className="sticky top-0 relative z-50 bg-[#f8f1e8]/95 backdrop-blur-md border-b border-[#d8c2aa] shadow-md">
       <div className="px-6 py-4 flex justify-between items-center relative">
         {/* LOGO */}
-        <Link href="/" className="font-bold tracking-wide hover:text-[#2EC4B6]">
+        <NavLink href="/" className="font-bold tracking-wide hover:text-[#2EC4B6]">
           Nancy a tvorba
-        </Link>
+        </NavLink>
 
         {/* SOCIALS (always visible) */}
         <div className="flex items-center gap-4 text-gray-600 md:absolute md:left-1/2 md:-translate-x-1/2">
@@ -63,10 +66,11 @@ export default function Navbar() {
 
         {/* LINKS desktop */}
         <div className="hidden md:flex gap-6 text-sm">
-          <Link href="/about">O mně</Link>
-          <Link href="/books">Knihy</Link>
-          <Link href="/drawings">Kresby</Link>
-          <Link href="/stories">Příběhy</Link>
+          <NavLink href="/about">O mně</NavLink>
+          <NavLink href="/books">Knihy</NavLink>
+          <NavLink href="/drawings">Kresby</NavLink>
+          <NavLink href="/stories">Příběhy</NavLink>
+          <LanguageSwitcher />
         </div>
 
         {/* HAMBURGER */}
@@ -84,37 +88,37 @@ export default function Navbar() {
                     border border-white/40
                      px-6 py-4 shadow-lg"
           >
-            <Link
+            <NavLink
               href="/about"
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
               O mně
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               href="/books"
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
               Knihy
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               href="/drawings"
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
               Kresby
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               href="/stories"
               onClick={() => setOpen(false)}
               className="hover:text-black transition"
             >
               Příběhy
-            </Link>
+            </NavLink>
           </div>
         </div>
       )}

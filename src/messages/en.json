@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "about": "About me",
+    "books": "Books",
+    "drawings": "Drawings",
+    "stories": "Stories"
+  },
+
+  "books": {
+    "title": {
+      "DANIEL": "I walk to her bed and lie down behind her, holding her gently as I stroke her hair. “I’m sorry, my dear. I didn’t mean this. Give her some time to process everything.”",
+      "MAJDA": "I stretch out my hand, still trembling as it clutches the chair. Someone calls out: ‘Majda, stop!’ But did you even hear it?",
+      "STRAZCI_PROLOG": "The battle is over. Two immortal siblings, bound by an endless rivalry, have finally destroyed each other.",
+      "STRAZCI_MATT": "I wake up in a soft bed inside a white room filled with morning light.",
+      "STRAZCI_ISABELA": "I still can’t believe it, even after all these days."
+    }
+  },
+
+  "stories": {
+    "content": {
+      "sen-o-lidske-nesmrtelnosti": "Clocks tick, time flows, flowers bloom and fade...",
+      "vlakova": "The moment was brief and almost unnoticeable, yet beautiful...",
+      "cas": "Time is a dimension used by everyone...",
+      "vanocni-prani": "Dear Santa, I have a small wish...",
+      "vanocni-stromecek": "The fireplace crackled as the smell of baked gingerbread filled the room..."
+    }
+  }
+}

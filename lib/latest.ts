@@ -1,6 +1,6 @@
-import { books } from "@/app/books/data";
-import { drawings } from "@/app/drawings/data";
-import { stories } from "@/app/stories/data";
+import { books } from "@/app/[locale]/books/data";
+import { drawings } from "@/app/[locale]/drawings/data";
+import { stories } from "@/app/[locale]/stories/data";
 
 export const latestItems = [
   ...books.map((book) => ({

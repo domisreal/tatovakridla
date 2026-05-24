@@ -4,6 +4,9 @@ import Navbar from "@/src/components/Navbar";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
+import Footer from "@/src/components/Footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -65,12 +68,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const messages = await getMessages();
+
   return (
     <html lang="cs">
-      <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
-        <Navbar />
-        <div className="container m-auto">{children}</div>
+      <body className={`${inter.className} ${cormorant.variable} antialiased`}>
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          <div className="container m-auto">{children}</div>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

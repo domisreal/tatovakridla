@@ -1,6 +1,6 @@
 import { stories } from "../data";
 import { notFound } from "next/navigation";
-import cs from "@/public/dictionaries/cs.json";
+import { getTranslations } from "next-intl/server";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -13,7 +13,8 @@ export default async function StoryDetail({ params }: Props) {
 
   if (!story) return notFound();
 
-  const content = cs[`stories.content.${slug}` as keyof typeof cs];
+  const t = await getTranslations("stories.content");
+  const content = t(slug);
 
   return (
     <main className="px-6 py-10 max-w-4xl mx-auto">
