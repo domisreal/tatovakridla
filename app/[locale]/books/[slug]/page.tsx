@@ -15,9 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!book) return notFound();
 
+  const t = await getTranslations("books");
+
   return {
     title: book.title,
-    description: book.descriptionKey,
+    description: t(book.descriptionKey),
     openGraph: {
       images: [
         {

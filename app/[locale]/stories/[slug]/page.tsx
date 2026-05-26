@@ -13,16 +13,16 @@ export default async function StoryDetail({ params }: Props) {
 
   if (!story) return notFound();
 
-  const t = await getTranslations("stories.content");
-  const content = t(slug);
+  const t = await getTranslations("stories");
+  const content = t(`content.${slug}`);
 
   return (
     <main className="px-6 py-10 max-w-4xl mx-auto">
       <div className="text-6xl mb-6">{story.icon}</div>
 
-      <h1 className="text-3xl font-bold mb-4">{story.title}</h1>
+      <h1 className="text-3xl font-bold mb-4">{t(story.titleKey)}</h1>
 
-      <p className="text-gray-600 mb-8">{story.description}</p>
+      <p className="text-gray-600 mb-8">{t(story.descriptionKey)}</p>
 
       <article className="whitespace-pre-line leading-8">{content}</article>
     </main>

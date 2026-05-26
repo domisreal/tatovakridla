@@ -1,7 +1,6 @@
 // app/layout.tsx
 import "@/style/globals.css";
 import Navbar from "@/src/components/Navbar";
-import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import Footer from "@/src/components/Footer";

@@ -7,6 +7,11 @@
   },
 
   "hero": {
+    "labels": {
+      "book": "Book",
+      "drawing": "Drawing",
+      "story": "Story"
+    },
     "rotating": {
       "nancy": "Nancy",
       "writer": "writer",
@@ -80,6 +85,31 @@
   },
 
   "stories": {
+    "title": "Stories",
+    "sen": {
+      "title": "Dream of Human Immortality",
+      "description": "A reflection on immortality and the meaning of life."
+    },
+
+    "vlakova": {
+      "title": "Train Journey",
+      "description": "A brief moment of beauty captured during a train journey."
+    },
+
+    "cas": {
+      "title": "Time",
+      "description": "A reflection on time as an inexorable flow that affects and shapes all our lives."
+    },
+
+    "vanocni_prani": {
+      "title": "Christmas Wish",
+      "description": "Three Christmas letters to Santa capturing children's wishes, faith, and the painful loss of a mother."
+    },
+    "vanocni_stromecek": {
+      "title": "Christmas Tree",
+      "description": "The story of a little girl who found a new home and joy during Christmas."
+    },
+
     "content": {
       "sen-o-lidske-nesmrtelnosti": "Clocks tick, time flows, flowers bloom and fade...",
       "vlakova": "The moment was brief and almost unnoticeable, yet beautiful...",
