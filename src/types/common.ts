@@ -45,8 +45,9 @@ export type DrawingsData = BaseData & {
 /**
  * STORIES (textové příběhy bez image)
  */
-export type StoriesData = BaseData & {
-  description: string;
+export type StoriesData = Omit<BaseData, "title"> & {
+  titleKey: string;
+  descriptionKey: string;
   icon: string;
 };
 

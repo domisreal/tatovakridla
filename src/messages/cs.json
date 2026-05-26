@@ -7,6 +7,11 @@
   },
 
   "hero": {
+    "labels": {
+      "book": "Kniha",
+      "drawing": "Kresba",
+      "story": "Příběh"
+    },
     "rotating": {
       "nancy": "Nancy",
       "writer": "spisovatelka",
@@ -80,6 +85,31 @@
   },
 
   "stories": {
+    "title": "Příběhy",
+    "sen": {
+      "title": "Sen o lidské nesmrtelnosti",
+      "description": "Úvaha o nesmrtelnosti a smyslu života."
+    },
+
+    "vlakova": {
+      "title": "Vlaková",
+      "description": "Krátký okamžik krásy zachycený při cestě vlakem."
+    },
+
+    "cas": {
+      "title": "Čas",
+      "description": "Úvaha o čase jako neúprosném proudu, který nás všechny ovlivňuje a formuje naše životy."
+    },
+
+    "vanocni_prani": {
+      "title": "Vánoční přání",
+      "description": "Tři vánoční dopisy Ježíškovi zachycující dětská přání, víru i bolestnou ztrátu matky."
+    },
+    "vanocni_stromecek": {
+      "title": "Vánoční stromeček",
+      "description": "Příběh o malém děvčátku, které našlo nový domov a radost během Vánoc."
+    },
+
     "content": {
       "sen-o-lidske-nesmrtelnosti": "Hodiny tikají, čas běží a květiny kvetou a vadnou. Zvířata dýchají a hynou. Hory pomalu rostou a rozpadají se. Lidé se rodí a odcházejí. Všechno jednou musí zemřít. Proč to ale tak je?\n\nMnoho lidí říká, že se smrti bojí. Proč? Protože nikdo skutečně neví, co po smrti přichází a lidé mají strach z něčeho neznámého. Možná jsme to kdysi věděli, co bylo a co bude, než naše duše přišly na tento svět. Ale v prvním nádechu čerstvého kyslíku jsme zapomněli. A proč? Abychom mohli znovu objevovat smysl bytí. Možná jsme ho dosud nepochopili, a proto nám kdosi dal další šanci, abychom našli důvod, proč vlastně žijeme.\n\nNěkomu se to podaří, někomu ne. V takových chvílích, kdy naše kůže přibude o další vrásku, vlasy se změní na odstíny šedé a naše pohyby budou stále pomalejší, nás napadne touha omládnout a žít ještě déle, než nám naše tělo naznačuje. Být nesmrtelný – co to vlastně znamená? Co to obnáší?\n\nPřede mnou leží smlouva. Je vypsaná úhledným inkoustovým písmem, po krajích zlatě zdobená a elegantním perem v mé ruce stačí zaměřit na poslední zlatý řádek čekající na můj podpis, který změní můj život v nekonečný. Být navždy mladá a krásná. Mládí a krása je moc. Kdo netouží po moci? Byla bych nesmrtelná, nemusela bych se bát, že v životě něco nestihnu. Poznala bych staletí různých dob a za několik let bych možná mohla číst v učebnicích dějepisu o činech, kterých jsem se osobně zúčastnila. A přitom by se mi to zdálo jako včera a ne jako sto let. Pro nesmrtelné se zastaví čas, ale zároveň vnímá staletí jako dobu měsíců.\n\nAle co nevýhody? Pomyslel někdo na ně? Co ostatní lidé? Poznala bych jich spousty. Jenže jejich čas se pro ně nezastaví, oni stále stárnou a později zemřou. Jistě, seznámila bych se s jinými, ale nahradí mi nové známosti ty staré? Zahladí tu bolest po smrti mých přátel, kterou bych mohla cítit? Co když se zamiluji? Co když se zamiluji tak zoufale, že si najednou budu přát zemřít s ním? Budu schopna se dívat na jeho stárnoucí tvář, dokud mezi námi nebude takový rozdíl, že by můj milenec vypadal spíš jako můj dědeček? Bude vůbec on schopen snést pohled na mou neměnící se tvář? A co když budeme mít děti? I ony jednou zestárnou a zemřou a jejich děti hned potom a další generace stále dokola, dokud…\n\nDokud nezůstanu úplně sama. Dokud mi konečně nedojde ta krása krátkého a přece dlouhého života. Ten pocit vědění, že člověk jednou musí odejít, mu dává možnost prožít každý okamžik, jako by byl už poslední, a tím ho činí výjimečným. Možnost vydolovat ze své mysli a těla všechno tak, jak nejlépe dovede, aby se ve stáří mohl podívat zpátky do obrazu své minulosti a spokojeně se usmát. Možnost splnit si své sny a žít spokojeně tak, že až se k jeho smrtelné posteli přiblíží smrt, on se do její tváře usměje a vkročí do její náruče jako do brány za dalším dobrodružstvím.\n\nSmrt není noční můra. Smrt je nový život. A sen o lidské nesmrtelnosti je pouhá iluze moci. Nesmrtelnost je věčné prokletí. Život je dar. Proto házím smlouvu do ohně a tím elegantním perem si na ruku píšu velkými písmeny: „ŽIJ!“.",
       "vlakova": "Ten okamžik byl krátký a nezaznamenatelný, ale právě to ho činilo tak nádherným.\nCesta vlakem bývá různá a zaleží na spoustě okolností, jestli si ji člověk užívá, nebo ne. Pokud je vlak přeplněný, lidé se s těžkými zavazadly mačkají skrz úzkou uličku podél zabraných kupé ve snaze najít aspoň jedno volné místo a ve vzduchu vládne napjatá a nepříjemná atmosféra. Člověk si tak tu cestu moc neužívá, ačkoliv má vlaky a cestování třeba rád. Ale pokud jedete poloprázdným vlakem v klidné zimní ráno, topení vám hřeje na zmrzlé nohy a za okny se vám míhá jemně zasněžená krajina, cesta je mnohem příjemnější a téměř ani nemáte potřebu stěžovat si, že jste museli vstávat brzy. Na to si totiž stěžuji skoro vždy, když jsem nucena k brzkému vstávání. Spím ráda a hodně, a když mě otravné vyzvánění budíku vzbudí uprostřed snění a musím vstát ještě za tmy, příliš se do zrcadla u čištění zubů neusmívám.\nDnešní ráno bylo podobné, ale v duchu jsem si nestěžovala více než při vstávání do školy, protože jsem vlastně vstávala ve stejnou dobu. Ale člověku se z vyhřáté postele i tak nechce, takže můj odraz v zrcadle se dočkal akorát rozespalých očí, zamračeného obočí a rozcuchaných vlasů. Tma se za okny držela ještě v sedm hodin a pomalu se rozjasňovalo, až o půl hodiny později. Do vlaku jsem nastoupila už za světla, ale teprve za jízdy jsem si všimla, že slunce z horizontu teprve vyjde a mně se rozjasnily oči jako malému dítěti při pohledu na vánoční stromek.\nCo mě na světě nikdy neomrzí, je Vesmír samotný a jeho genialita a kreativita. Okamžiků, kdy můžeme obdivovat Vesmír a Matku Země je nespočet a já se teď chci zaměřit pouze na jeden, který se dnes odrazil v mých očích. Východ slunce.\nVýchody a západy slunce jsou jedny z nejnádhernějších scén, které nám Vesmír poskytuje každý den, a proto možná spoustu lidí tolik nezajímají. Já je ovšem miluji, protože jsem člověk, co ve dvaceti stále vnímá okolní svět dětskýma očima a vidí kouzlo v okamžicích, které spoustu lidí přehlíží.\nJeden takový okamžik mě právě přiměl toto napsat. Slunce už vycházelo a svými zlatavými paprsky roztřpytilo slabou vrstvu sněhu na polích a holých zmrzlých větvičkách. Zabarvovalo kraje obláčků hřejivými barvami a zbytku jasné oblohy dodalo svůj obvyklý azurový nádech. Pak vlak vjel do kolejnic obklopených malým lesem a sluneční paprsky se začaly lámat skrz mezery mezi stromy a pronikaly přímo do oken vlaku a mé tváře. V ten okamžik jsem na chvíli zatajila dech a uchváceně sledovala tu pohyblivou scénu před sebou. Díky okolním stínům, které stromy tvořily, se paprsky kontrastně zdály ještě silnější a jejich zlatá zář polykala obrysy všech kmenů, větví a pár zaschlých listů, které od podzimu stále nechtěly spadnout. Najednou jsem neviděla sníh, ale zdálo se mi, že mi příroda kvetla před očima a měla jsem pocit, že je venku jaro. Vnímala jsem teplo, ale ne kvůli blikajícím paprskům ve tváři, nebo kvůli topení u mých nohou. Cítila jsem takový ten hřejivý pocit, který vnímáte jen uvnitř sebe, když se zamyslíte nad zrovna běžícím okamžikem a pro sebe si řeknete, že se máte dobře, a že je život krásný. Zpoza stromu pak najednou vyskočila srnka a prchala od hlučného vlaku dál a o několik metrů hned další. Pozorovala jsem jejich skákající bílé ocásky, dokud mi nezmizely z dohledu a chvíli na to vlak vyjel z lesa a kouzlo bylo pryč. Opět nastala zima.\nJá ale stejně ještě několik vteřin zírala ven, okouzlená tím, co jsem zrovna viděla, a v hlavě jsem se snažila celou scénu zopakovat, ale už to nebylo ono. Přesto mi začaly v myšlenkách skákat slova, která zrovna sepisuji a ať je čtu, doplňuji, měním a obnovuji sebevíc, nejsem schopna přijít na to, jak lépe ještě ten krátký a nádherný okamžik popsat, abyste si ho mohli představit co nejživěji. A ono to nejde. Ale zřejmě to je na té přírodě právě tak krásné.\nMnoho malířů maluje krajiny a mnoho fotografů krajiny fotí. Někdo přírodu dovede vytvořit v animovaném filmu a jiní se její krásu snaží popsat slovy. A bývají to díla nádherná a fascinující a můžeme na ně zírat hodiny a hodiny a libovat si nad genialitou toho umělce. Ale nikdo není větší umělec, než příroda sama. A nic není lepší záznam, než přítomnost viděná na vlastní oči.",

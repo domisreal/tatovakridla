@@ -4,39 +4,36 @@ import { StoriesData } from "@/src/types/common";
 export const stories: StoriesData[] = [
   {
     slug: "sen-o-lidske-nesmrtelnosti",
-    title: "Sen o lidské nesmrtelnosti",
-    description: "Úvaha o nesmrtelnosti a smyslu života.",
+    titleKey: "sen.title",
+    descriptionKey: "sen.description",
     icon: "🕰️",
     createdAt: toDate("2026-05-14"),
   },
   {
     slug: "vlakova",
-    title: "Vlaková",
-    description:
-      "Krátký okamžik krásy zachycený při cestě vlakem, kdy se zimní krajina promění ve světlo, teplo a ticho přírody.",
+    titleKey: "vlakova.title",
+    descriptionKey: "vlakova.description",
     icon: "🚆",
     createdAt: toDate("2024-06-02"),
   },
   {
     slug: "cas",
-    title: "Čas",
-    description:
-      "Úvaha o čase jako neúprosném proudu, který nás všechny ovlivňuje a formuje naše životy.",
+    titleKey: "cas.title",
+    descriptionKey: "cas.description",
     icon: "⏳",
     createdAt: toDate("2024-06-02"),
   },
   {
     slug: "vanocni-prani",
-    title: "Vánoční přání",
-    description:
-      "Tři vánoční dopisy Ježíškovi zachycující dětská přání, víru i bolestnou ztrátu matky",
+    titleKey: "vanocni_prani.title",
+    descriptionKey: "vanocni_prani.description",
     icon: "🎄📜",
     createdAt: toDate("2024-06-02"),
   },
   {
     slug: "vanocni-stromecek",
-    title: "Vánoční stromeček",
-    description: "Příběh o malém děvčátku, které našlo nový domov a radost během Vánoc.",
+    titleKey: "vanocni_stromecek.title",
+    descriptionKey: "vanocni_stromecek.description",
     icon: "🎄🏡",
     createdAt: toDate("2024-06-02"),
   },

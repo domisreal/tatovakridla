@@ -4,7 +4,7 @@ import { DrawingsData } from "@/src/types/common";
 export const drawings: DrawingsData[] = [
   {
     slug: "portret-bts",
-    title: "Portrét BTS",
+    title: "Portrait BTS",
     image: "/images/drawings/BTS.webp",
     width: 1400,
     height: 2000,
@@ -12,7 +12,7 @@ export const drawings: DrawingsData[] = [
   },
   {
     slug: "kresba-kocky",
-    title: "Kresba kočky",
+    title: "Cat Drawing",
     image: "/images/drawings/CAT.webp",
     width: 1400,
     height: 1400,
@@ -20,7 +20,7 @@ export const drawings: DrawingsData[] = [
   },
   {
     slug: "ilustrace-got",
-    title: "Ilustrace z Game of Thrones",
+    title: "Game of Thrones Illustration",
     image: "/images/drawings/GOT.webp",
     width: 1400,
     height: 2000,
@@ -28,7 +28,7 @@ export const drawings: DrawingsData[] = [
   },
   {
     slug: "portret-suga-bts",
-    title: "Portrét Suga z BTS",
+    title: "Suga Portrait from BTS",
     image: "/images/drawings/Suga.webp",
     width: 1400,
     height: 2000,
@@ -36,7 +36,7 @@ export const drawings: DrawingsData[] = [
   },
   {
     slug: "portret-suga-bts-1",
-    title: "Portrét z BTS",
+    title: "Suga Portrait from BTS - 1",
     image: "/images/drawings/BTS1.webp",
     width: 1400,
     height: 2000,
@@ -44,7 +44,7 @@ export const drawings: DrawingsData[] = [
   },
   {
     slug: "portret-suga-bts-2",
-    title: "Portrét Suga z BTS-2",
+    title: "Suga Portrait from BTS - 2",
     image: "/images/drawings/BTS2.webp",
     width: 1400,
     height: 2000,

@@ -1,16 +1,31 @@
 "use client";
-
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { latestItems } from "@/lib/latest";
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
+const routeMap = {
+  book: "books",
+  drawing: "drawings",
+  story: "stories",
+} as const;
+
 export default function HeroCarousel() {
   const items = latestItems.slice(0, 3); // vezmeme jen 3 nejnovější položky
   const [index, setIndex] = useState(0);
+  const t = useTranslations("stories");
+  const tLabels = useTranslations("hero.labels");
 
+  const getTitle = (item: (typeof items)[number]) => {
+    if (item.type === "story") {
+      return t(item.titleKey);
+    }
+
+    return item.title;
+  };
   const current = items[index];
 
   const STORY_IMAGE = "/images/story.jpg";
@@ -26,26 +41,12 @@ export default function HeroCarousel() {
   const next = () => setIndex((p) => (p + 1) % items.length);
   const prev = () => setIndex((p) => (p - 1 + items.length) % items.length);
 
-  const labels = {
-    book: "Kniha",
-    drawing: "Kresba",
-    story: "Příběh",
+  const getLabel = (type: "book" | "drawing" | "story") => {
+    return tLabels(type);
   };
 
   const getHref = (item: typeof current) => {
-    switch (item.type) {
-      case "book":
-        return `/books/${item.slug}`;
-
-      case "drawing":
-        return `/drawings/${item.slug}`;
-
-      case "story":
-        return `/stories/${item.slug}`;
-
-      default:
-        return "/";
-    }
+    return `/${routeMap[item.type]}/${item.slug}`;
   };
 
   return (
@@ -85,14 +86,14 @@ export default function HeroCarousel() {
                   {/* BADGE */}
                   <div className="absolute top-2 left-2 z-10">
                     <span className="bg-white/70 text-black backdrop-blur-md text-[10px] uppercase tracking-widest px-2 py-1 rounded">
-                      {labels[current.type]}
+                      {getLabel(current.type)}
                     </span>
                   </div>
 
                   {/* IMAGE */}
                   <Image
                     src={getImage(current)}
-                    alt={current.title}
+                    alt={getTitle(current)}
                     fill
                     sizes="(max-width: 768px) 360px, 420px"
                     className="object-cover"
@@ -100,7 +101,7 @@ export default function HeroCarousel() {
                 </div>
 
                 <div className="h-[72px] p-3">
-                  <h3 className="font-semibold text-lg line-clamp-2">{current.title}</h3>
+                  <h3 className="font-semibold text-lg line-clamp-2">{getTitle(current)}</h3>
                 </div>
               </Link>
             </motion.div>
@@ -136,12 +137,12 @@ export default function HeroCarousel() {
             <div className="relative h-[420px] aspect-[2/3] mx-auto">
               <div className="absolute top-2 left-2 z-10">
                 <span className="bg-white/70 text-black backdrop-blur-md text-[10px] uppercase tracking-widest px-2 py-1 rounded">
-                  {labels[item.type]}
+                  {getLabel(item.type)}
                 </span>
               </div>
               <Image
                 src={getImage(item)}
-                alt={item.title}
+                alt={getTitle(item)}
                 fill
                 sizes="(max-width: 768px) 360px, 420px"
                 className="object-cover transition duration-300 ease-in-out group-hover:scale-105"
@@ -149,7 +150,7 @@ export default function HeroCarousel() {
             </div>
 
             <div className="h-[72px] p-3 z-10">
-              <h3 className="font-semibold text-lg line-clamp-2">{item.title}</h3>
+              <h3 className="font-semibold text-lg line-clamp-2">{getTitle(item)}</h3>
             </div>
           </Link>
         ))}

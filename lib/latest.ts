@@ -5,25 +5,17 @@ import { stories } from "@/app/[locale]/stories/data";
 export const latestItems = [
   ...books.map((book) => ({
     type: "book" as const,
-    slug: book.slug,
-    title: book.title,
-    image: book.image,
-    createdAt: book.createdAt,
+    ...book,
   })),
 
   ...drawings.map((drawing) => ({
     type: "drawing" as const,
-    slug: drawing.slug,
-    title: drawing.title,
-    image: drawing.image,
-    createdAt: drawing.createdAt,
+    ...drawing,
   })),
 
   ...stories.map((story) => ({
     type: "story" as const,
-    slug: story.slug,
-    title: story.title,
+    ...story,
     image: "/images/story.jpg",
-    createdAt: story.createdAt,
   })),
 ].sort((a, b) => b.createdAt - a.createdAt || a.slug.localeCompare(b.slug));
