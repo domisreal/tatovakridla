@@ -1,0 +1,31 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>http://localhost:3000/cs</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en</loc>
+  </url>
+
+  <url>
+    <loc>http://localhost:3000/cs/about</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/about</loc>
+  </url>
+
+  <url>
+    <loc>http://localhost:3000/cs/books</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/books</loc>
+  </url>
+
+  <url>
+    <loc>http://localhost:3000/cs/drawings</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/drawings</loc>
+  </url>
+
+</urlset>

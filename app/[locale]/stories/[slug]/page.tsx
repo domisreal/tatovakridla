@@ -1,10 +1,25 @@
 import { stories } from "../data";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const story = stories.find((s) => s.slug === slug);
+
+  if (!story) return notFound();
+
+  const t = await getTranslations("stories");
+
+  return {
+    title: t(story.titleKey),
+    description: t(story.descriptionKey),
+  };
+}
 
 export default async function StoryDetail({ params }: Props) {
   const { slug } = await params;

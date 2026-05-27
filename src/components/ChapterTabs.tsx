@@ -19,6 +19,7 @@ export default function ChapterTabs({ chapters }: { chapters: Chapter[] }) {
           <button
             key={index}
             onClick={() => setActiveTab(ch.type)}
+            aria-label={`Switch to ${titleT(ch.type)} chapter`}
             className={`
 px-5 py-2 rounded-full transition-all duration-300 border
 ${

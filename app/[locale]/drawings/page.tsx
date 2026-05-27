@@ -52,6 +52,7 @@ export default function DrawingsPage() {
           <button
             key={item.slug}
             onClick={() => setSelectedIndex(index)}
+            aria-label={`View details for ${item.title}`} // Accessibility label
             className="group relative overflow-hidden rounded-lg"
           >
             {/* IMAGE WRAPPER */}
@@ -88,6 +89,7 @@ export default function DrawingsPage() {
               e.stopPropagation();
               prev();
             }}
+            aria-label="Previous drawing"
             className="absolute left-4 text-white text-4xl px-2"
           >
             ‹
@@ -117,6 +119,7 @@ export default function DrawingsPage() {
               e.stopPropagation();
               next();
             }}
+            aria-label="Next drawing"
             className="absolute right-4 text-white text-4xl px-2"
           >
             ›

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
-import { useEffect } from "react";
 import NavLink from "@/src/components/NavLink";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/src/components/LangSwitch";
@@ -12,34 +11,26 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const t = useTranslations("navbar");
 
-  useEffect(() => {
-    const media = window.matchMedia("(min-width: 768px)");
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      if (e.matches) {
-        setOpen(false);
-      }
-    };
-
-    media.addEventListener("change", handleChange);
-
-    return () => media.removeEventListener("change", handleChange);
-  }, []);
-
   return (
     <nav className="sticky top-0 relative z-50 bg-[#f8f1e8]/95 backdrop-blur-md border-b border-[#d8c2aa] shadow-md">
-      <div className="px-6 py-4 flex justify-between items-center relative">
+      <div className="px-6 py-4 flex items-center justify-between md:grid md:grid-cols-[1fr_auto_1fr] md:items-center gap-4">
         {/* LOGO */}
-        <NavLink href="/" className="font-bold tracking-wide hover:text-[#2EC4B6]">
-          Nancy a tvorba
-        </NavLink>
+        <div className="justify-self-start">
+          <NavLink
+            href="/"
+            className="font-bold tracking-wide hover:text-[#2EC4B6] transition whitespace-nowrap"
+          >
+            Nancy a tvorba
+          </NavLink>
+        </div>
 
         {/* SOCIALS (always visible) */}
-        <div className="flex items-center gap-4 text-gray-600 md:absolute md:left-1/2 md:-translate-x-1/2">
+        <div className="flex items-center gap-4 text-gray-600 justify-self-center whitespace-nowrap">
           <a
             href="https://www.instagram.com/nancy_a_tvorba/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
             className="hover:text-pink-500 transition"
           >
             <FaInstagram size={20} />
@@ -49,6 +40,7 @@ export default function Navbar() {
             href="https://www.youtube.com/@nancykralova6492"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="YouTube"
             className="hover:text-red-500 transition"
           >
             <FaYoutube size={20} />
@@ -58,6 +50,7 @@ export default function Navbar() {
             href="https://www.facebook.com/profile.php?id=61560069083239"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
             className="hover:text-blue-600 transition"
           >
             <FaFacebook size={20} />
@@ -65,7 +58,7 @@ export default function Navbar() {
         </div>
 
         {/* LINKS desktop */}
-        <div className="hidden md:flex gap-6 text-sm">
+        <div className="hidden md:flex gap-6 text-sm justify-self-end whitespace-nowrap">
           <NavLink href="/about">{t("about")}</NavLink>
           <NavLink href="/books">{t("books")}</NavLink>
           <NavLink href="/drawings">{t("drawings")}</NavLink>
@@ -74,14 +67,22 @@ export default function Navbar() {
         </div>
 
         {/* HAMBURGER */}
-        <button type="button" className="md:hidden" onClick={() => setOpen(!open)}>
+        <button
+          type="button"
+          className="md:hidden justify-self-end"
+          onClick={() => setOpen(!open)}
+          aria-label={open ? "Close menu" : "Open menu"}
+        >
           {open ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
         </button>
       </div>
 
       {/* PARTIAL OVERLAY WHILE HAMBURGER MENU IS OPEN */}
       {open && (
-        <div className="absolute top-full right-0 z-50 pointer-events-auto">
+        <div
+          className="absolute top-full right-0 z-50 pointer-events-auto"
+          aria-label="Hamburger menu overlay"
+        >
           <div
             className="flex flex-col items-end gap-4 text-sm text-gray-800
                     bg-white/60 backdrop-blur-md
@@ -119,6 +120,9 @@ export default function Navbar() {
             >
               {t("stories")}
             </NavLink>
+            <div className="pt-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}

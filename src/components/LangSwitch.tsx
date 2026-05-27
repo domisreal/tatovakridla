@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
+import ReactCountryFlag from "react-country-flag";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -12,20 +13,44 @@ export default function LanguageSwitcher() {
     router.replace(pathname, { locale: nextLocale });
   };
 
+  const baseButton = "transition-all duration-200 hover:scale-110 opacity-70 hover:opacity-100";
+
+  const activeClass = "opacity-100 scale-110";
+
   return (
-    <div className="flex gap-2 text-sm">
+    <div className="flex items-center ">
+      {/* CZ */}
       <button
         onClick={() => switchLocale("cs")}
-        className={locale === "cs" ? "text-[#2EC4B6]" : "text-slate-600"}
+        className={`${baseButton} ${locale === "cs" ? activeClass : ""} shrink-0`}
+        aria-label="Switch to Czech"
       >
-        CZ
+        <ReactCountryFlag
+          countryCode="CZ"
+          svg
+          style={{
+            width: "1.4em",
+            height: "1.4em",
+          }}
+          alt="CZ"
+        />
       </button>
-
+      <span className="mx-1 text-sm opacity-50 select-none">/</span>
+      {/* EN */}
       <button
         onClick={() => switchLocale("en")}
-        className={locale === "en" ? "text-[#2EC4B6]" : "text-slate-600"}
+        className={`${baseButton} ${locale === "en" ? activeClass : ""} shrink-0`}
+        aria-label="Switch to English"
       >
-        EN
+        <ReactCountryFlag
+          countryCode="GB"
+          svg
+          style={{
+            width: "1.4em",
+            height: "1.4em",
+          }}
+          alt="GB"
+        />
       </button>
     </div>
   );
