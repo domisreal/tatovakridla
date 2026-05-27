@@ -30,6 +30,9 @@ export default async function Hero() {
               src="/images/nancy_cari.jpg"
               alt="Hero image"
               fill
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 90vw, 440px"
               className="object-cover rounded-full border-4 border-white shadow-2xl"
             />
           </div>

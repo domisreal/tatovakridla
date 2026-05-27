@@ -42,7 +42,14 @@ export default async function BookDetail({ params }: Props) {
     <main className="px-6 py-16">
       <div className="grid md:grid-cols-[300px_1fr] gap-14 items-start">
         {/* IMAGE */}
-        <Image src={book.image} alt={book.title} width={250} height={380} priority />
+        <Image
+          src={book.image}
+          alt={book.title}
+          width={250}
+          height={380}
+          priority
+          sizes="(max-width: 768px) 60vw, 250px"
+        />
 
         {/* TEXT */}
         <div>
@@ -66,7 +73,7 @@ export default async function BookDetail({ params }: Props) {
             width={600}
             height={400}
             className="rounded mb-6 mx-auto"
-            priority
+            sizes="(max-width: 768px) 100vw, 600px"
           />
         )}
 
@@ -75,13 +82,17 @@ export default async function BookDetail({ params }: Props) {
             href={book.buyLink}
             target="_blank"
             className="inline-flex items-center px-6 py-3 rounded-full bg-[#2EC4B6] text-white font-medium shadow-lg shadow-[#2EC4B6]/30 hover:bg-[#21a89b] hover:scale-105 transition-all duration-300"
+            aria-label={`Buy ${book.title} on external site`} // Accessibility label
           >
             {t("buyButton")}
           </a>
         )}
 
         {book.chapters && (
-          <div className="mt-6 p-4 text-gray-700 text-left">
+          <div
+            className="mt-6 p-4 text-gray-700 text-left"
+            aria-label={`Chapters of ${book.title}`}
+          >
             <ChapterTabs chapters={book.chapters} />
           </div>
         )}

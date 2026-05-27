@@ -37,6 +37,7 @@ export default async function Footer() {
               href="https://www.instagram.com/nancy_a_tvorba/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
               className="hover:text-pink-500 transition"
             >
               <FaInstagram size={20} />
@@ -46,6 +47,7 @@ export default async function Footer() {
               href="https://www.youtube.com/@nancykralova6492"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="YouTube"
               className="hover:text-red-500 transition"
             >
               <FaYoutube size={20} />
@@ -55,6 +57,7 @@ export default async function Footer() {
               href="https://www.facebook.com/profile.php?id=61560069083239"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook"
               className="hover:text-blue-600 transition"
             >
               <FaFacebook size={20} />

@@ -15,6 +15,7 @@ export default async function AboutPage() {
               src="/images/nancy_creation.jpg"
               alt="Nancy Králová"
               fill
+              sizes="(max-width: 768px) 100vw, 1152px"
               className="object-cover"
               priority
             />
