@@ -19,7 +19,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("http://www.nancytvorba.cz"),
 
   title: {
     default: "Nancy a tvorba",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nancy a tvorba",
     description: "Kreativní portfolio ilustrací, knih a příběhů Nancy.",
-    url: "http://localhost:3000",
+    url: "http://www.nancytvorba.cz",
     siteName: "Nancy a tvorba",
     images: [
       {
