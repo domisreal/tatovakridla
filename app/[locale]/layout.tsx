@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     "Nancy",
     "NancyKralova",
     "Nancy Králová",
+    "Nancy a tvorba",
+    "Nancy's creations",
+    "Nancy tvorba",
   ],
 
   openGraph: {

@@ -4,8 +4,11 @@ import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { drawings } from "./data";
 import { formatDate } from "@/lib/formatDate";
+import { useTranslations } from "next-intl";
 
 export default function DrawingsPage() {
+  const t = useTranslations("drawings");
+
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const current = selectedIndex !== null ? drawings[selectedIndex] : null;
@@ -44,7 +47,7 @@ export default function DrawingsPage() {
   return (
     <section className="px-6 py-16 max-w-6xl mx-auto">
       {/* TITLE */}
-      <h1 className="text-3xl sm:text-4xl font-semibold mb-10">Kresby</h1>
+      <h1 className="text-3xl sm:text-4xl font-semibold mb-10">{t("title")}</h1>
 
       {/* GRID */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

@@ -84,6 +84,10 @@
     }
   },
 
+  "drawings": {
+    "title": "Kresby"
+  },
+
   "stories": {
     "title": "Příběhy",
     "sen": {
