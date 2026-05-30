@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { Link } from "@/i18n/navigation";
+import { useState } from "react";
 
 export default function MobileCarousel({
   items,
@@ -17,13 +18,36 @@ export default function MobileCarousel({
 }: any) {
   const current = items[index];
 
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+
   return (
-    <div className="md:hidden flex items-center justify-center gap-2">
+    <div
+      className="md:hidden flex items-center justify-center gap-2"
+      onTouchStart={(e) => {
+        setTouchStart(e.touches[0].clientX);
+      }}
+      onTouchEnd={(e) => {
+        if (touchStart === null) return;
+
+        const diff = touchStart - e.changedTouches[0].clientX;
+
+        if (diff > 50) {
+          next();
+        }
+
+        if (diff < -50) {
+          prev();
+        }
+
+        setTouchStart(null);
+      }}
+    >
+      {/* LEFT BUTTON */}
       <button onClick={prev} aria-label="Previous item">
         <ChevronLeftIcon className="w-6 h-6" />
       </button>
 
-      {/* prev */}
+      {/* PREV */}
       <div className="opacity-40 scale-90 w-[60px] overflow-hidden rounded">
         <Image
           src={items[(index - 1 + items.length) % items.length].image}
@@ -34,7 +58,7 @@ export default function MobileCarousel({
         />
       </div>
 
-      {/* current */}
+      {/* CURRENT */}
       <div className="w-[180px]">
         <AnimatePresence mode="wait">
           <motion.div
@@ -75,7 +99,7 @@ export default function MobileCarousel({
         </AnimatePresence>
       </div>
 
-      {/* next */}
+      {/* NEXT */}
       <div className="opacity-40 scale-90 w-[60px] overflow-hidden rounded">
         <Image
           src={items[(index + 1) % items.length].image}
@@ -86,6 +110,7 @@ export default function MobileCarousel({
         />
       </div>
 
+      {/* RIGHT BUTTON */}
       <button onClick={next} aria-label="Next item">
         <ChevronRightIcon className="w-6 h-6" />
       </button>
