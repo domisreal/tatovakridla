@@ -13,6 +13,8 @@ export default function DrawingsPage() {
 
   const current = selectedIndex !== null ? drawings[selectedIndex] : null;
 
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+
   const next = useCallback(() => {
     if (selectedIndex === null) return;
     setSelectedIndex((selectedIndex + 1) % drawings.length);
@@ -84,6 +86,17 @@ export default function DrawingsPage() {
       {current && (
         <div
           className="fixed inset-0 bg-black/85 flex items-center justify-center z-50"
+          onTouchStart={(e) => setTouchStart(e.touches[0].clientX)}
+          onTouchEnd={(e) => {
+            if (touchStart === null) return;
+
+            const diff = touchStart - e.changedTouches[0].clientX;
+
+            if (diff > 50) next();
+            if (diff < -50) prev();
+
+            setTouchStart(null);
+          }}
           onClick={() => setSelectedIndex(null)}
         >
           {/* LEFT */}
