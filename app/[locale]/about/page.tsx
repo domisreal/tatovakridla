@@ -1,6 +1,17 @@
 import Image from "next/image";
 import { aboutVideos } from "./data";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("about");
+  const n = await getTranslations("navbar");
+
+  return {
+    title: n("about"),
+    description: t("metaDescription"),
+  };
+}
 
 export default async function AboutPage() {
   const t = await getTranslations("about");
@@ -10,9 +21,9 @@ export default async function AboutPage() {
       <div className="space-y-12">
         {/* IMAGE (BANNER) */}
         <div className="mb-12">
-          <div className="relative w-full aspect-[21/9] overflow-hidden rounded-3xl">
+          <div className="relative w-full aspect-video md:aspect-[21/9] overflow-hidden rounded-3xl">
             <Image
-              src="/images/nancy_creation.jpg"
+              src="/images/nancy_creation.webp"
               alt="Nancy Králová"
               fill
               sizes="(max-width: 768px) 100vw, 1152px"

@@ -1,4 +1,5 @@
 {
+  "siteName": "Nancy a tvorba",
   "navbar": {
     "about": "O mně",
     "books": "Knihy",
@@ -36,6 +37,7 @@
 
   "about": {
     "title": "O mně",
+    "metaDescription": "Přečtěte si o mé cestě k psaní, umění a inspiraci, která mě provází. Zjistěte více o mé tvorbě a životních zkušenostech.",
     "interviews": "Rozhovory se mnou",
 
     "paragraphs": {
@@ -55,6 +57,7 @@
 
   "books": {
     "title": "Knihy",
+    "metaDescription": "Přehled knih, které jsem napsala, včetně popisů a ukázek z nich.",
     "buyButton": "Koupit knihu",
     "tatovaKridla": {
       "description": "Zprvu hravá, později napínavá emotivní novela, kterou společně vyprávějí táta s dcerou i přes to, že je dávno rozdělila smrt.",
@@ -90,6 +93,7 @@
 
   "stories": {
     "title": "Příběhy",
+    "metaDescription": "Přečtěte si krátké příběhy včetně úvah o životě, kráse a dalších tématech.",
     "sen": {
       "title": "Sen o lidské nesmrtelnosti",
       "description": "Úvaha o nesmrtelnosti a smyslu života."
