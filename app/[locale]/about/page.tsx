@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { aboutVideos } from "./data";
+import { aboutVideos } from "@/src/data/about";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 

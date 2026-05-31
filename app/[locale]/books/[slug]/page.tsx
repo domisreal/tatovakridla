@@ -1,4 +1,4 @@
-import { books } from "../data";
+import { books } from "@/src/data/books";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Image from "next/image";

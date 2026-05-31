@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import { stories } from "./data";
+import { stories } from "@/src/data/stories";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 
