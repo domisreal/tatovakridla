@@ -1,5 +1,6 @@
 {
   "siteName": "Nancy a tvorba",
+  "siteDescription": "Nancy kreativní koutek s přehledem kreseb, knih a příběhů.",
   "navbar": {
     "about": "O mně",
     "books": "Knihy",
@@ -88,7 +89,8 @@
   },
 
   "drawings": {
-    "title": "Kresby"
+    "title": "Kresby",
+    "metaDescription": "Prohlédněte si galerii mých kreseb a maleb"
   },
 
   "stories": {

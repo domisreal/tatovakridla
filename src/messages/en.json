@@ -1,5 +1,6 @@
 {
   "siteName": "Nancy's creations",
+  "siteDescription": "A creative world with drawings, books and stories.",
   "navbar": {
     "about": "About",
     "books": "Books",
@@ -88,7 +89,8 @@
   },
 
   "drawings": {
-    "title": "Drawings"
+    "title": "Drawings",
+    "metaDescription": "Explore a gallery of my drawings and paintings, showcasing my artistic journey and creativity."
   },
 
   "stories": {

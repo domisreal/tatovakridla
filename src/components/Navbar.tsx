@@ -10,6 +10,7 @@ import LanguageSwitcher from "@/src/components/LangSwitch";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const t = useTranslations("navbar");
+  const common = useTranslations();
 
   return (
     <nav className="sticky top-0 relative z-50 bg-[#f8f1e8]/95 backdrop-blur-md border-b border-[#d8c2aa] shadow-md">
@@ -20,7 +21,7 @@ export default function Navbar() {
             href="/"
             className="font-bold tracking-wide hover:text-[#2EC4B6] transition whitespace-nowrap"
           >
-            Nancy a tvorba
+            {common("siteName")}
           </NavLink>
         </div>
 

@@ -1,4 +1,4 @@
-import { drawings } from "../data";
+import { drawings } from "@/src/data/drawings";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 

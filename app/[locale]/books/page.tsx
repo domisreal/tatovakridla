@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import { books } from "./data";
+import { books } from "@/src/data/books";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 

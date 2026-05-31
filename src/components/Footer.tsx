@@ -4,12 +4,14 @@ import { getTranslations } from "next-intl/server";
 
 export default async function Footer() {
   const t = await getTranslations("footer");
+  const common = await getTranslations();
+
   return (
     <footer className="mt-24 border-t border-[#d8c2aa] bg-[#f8f1e8]">
       <div className="container mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
         {/* LEFT */}
         <div>
-          <h3 className="text-xl font-bold mb-3">Nancy a tvorba</h3>
+          <h3 className="text-xl font-bold mb-3">{common("siteName")}</h3>
 
           <p className="text-gray-600 text-sm leading-relaxed">{t("description")}</p>
         </div>
