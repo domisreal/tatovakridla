@@ -12,8 +12,9 @@ export default async function Hero() {
         {/* TEXT */}
         <div className="text-left space-y-4">
           <h1 className="mb-4 text-4xl sm:text-6xl lg:text-6xl font-extrabold leading-tight">
-            <span className="text-[#8B6B4E]">{t("hello")}</span>
-            <span className="text-[#2EC4B6]">
+            <span className="block text-[#8B6B4E]">{t("hello")}</span>
+
+            <span className="block text-[#2EC4B6]">
               <RotatingText />
             </span>
           </h1>

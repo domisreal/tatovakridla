@@ -1,6 +1,16 @@
 import { Link } from "@/i18n/navigation";
 import { stories } from "./data";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("stories");
+  const n = await getTranslations("navbar");
+  return {
+    title: n("stories"),
+    description: t("metaDescription"),
+  };
+}
 
 export default async function StoriesPage() {
   const t = await getTranslations("stories");

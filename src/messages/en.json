@@ -1,4 +1,5 @@
 {
+  "siteName": "Nancy's creations",
   "navbar": {
     "about": "About",
     "books": "Books",
@@ -17,7 +18,7 @@
       "writer": "writer",
       "artist": "artist"
     },
-    "hello": "Hello, I am ",
+    "hello": "Hello, I'm ",
     "description": "I write books, draw, paint and make videos.",
     "welcome": "Welcome to my creative world.",
     "latest": "Latest creations"
@@ -31,19 +32,20 @@
     "drawings": "Drawings",
     "stories": "Stories",
     "contact": "Contact",
-    "copyright": "Copyright © 2026 Nancy and Creation | Created with ❤️ by Dominik Král"
+    "copyright": "Copyright © 2026 Nancy's creations | Created with ❤️ by Dominik Král"
   },
 
   "about": {
     "title": "About me",
+    "metaDescription": "Read about my journey to writing, art, and the inspiration that drives me. Learn more about my creative work and life experiences.",
     "interviews": "Interviews",
 
     "paragraphs": {
-      "p1": "I started writing because I wanted to learn more about the unfinished trilogy Guardians of Time by Marianne Curley. Between the ages of 13 and 18, I wrote my own continuation.",
-      "p2": "That was when I realized how much I loved creating stories, and at sixteen, I began thinking about my own original world. That was also when my dream of publishing a book was born.",
-      "p3": "Besides writing, I love drawing and artistic creation, which is why I attended an art school.",
-      "p4": "After school, life took me to Scotland, where I spent four wonderful years that brought me a lot of experience and inspiration.",
-      "p5": "Today I spend most of my time with my daughter and son, dedicating myself to creation while also studying Korean."
+      "p1": "I got to writing thanks to my desire to know more about the trilogy Guardians of Time by Mariannge Curley. I wrote my own fan sequel to it between my thirteenth and eighteenth year.",
+      "p2": "This way I discovered how much I love creating stories and I started creating my own world when I was sixteen. That is when my dream of writing my own book appeared.",
+      "p3": "Apart from writing I also love drawing and any other arts and crafts, hence why I studied at an art school.",
+      "p4": "After my studies, my life took me to Scotland where I spent four marvelous years filled with inspiration and many lovely experiences.",
+      "p5": "Nowadays I devote myself to my daughter and son, also spending time with art and studying the Korean language."
     },
 
     "videos": {
@@ -55,24 +57,25 @@
 
   "books": {
     "title": "Books",
-    "buyButton": "Buy book",
+    "metaDescription": "Overview of the books I've written, including descriptions and excerpts from them.",
+    "buyButton": "Buy the book",
     "tatovaKridla": {
-      "description": "Initially playful, later a suspenseful and emotional novella, jointly narrated by a father and daughter despite being long separated by death.",
-      "annotation": "The story of 'Tatova Kridla' tells of Daniel, who became a father on the day of his death, and his daughter Majda, who became an orphan on the day of her birth. However, Daniel remains by Majda's side for the next sixteen years as her protector, guiding her through life with the help of angels. With the arrival of the angel of death, he faces unpredictable and challenging trials, and Daniel's protective wings go out of control."
+      "description": "At first a playful, later gripping emotional novella told from the perspectives of a father and his daughter, despite being separated by death.",
+      "annotation": "Tátova Křídla tells a story of Daniel who became a father on the same day he died and of Majda who was orphaned the day she was born. For the next sixteen years however, Daniel stays by her side as her guardian angel, leading her on the best possible path. Then with the arrival of the Angel of Death, new and unexpected challenges await them and his protective embrace begins losing control."
     },
 
     "strazciCasuPouto": {
-      "description": "Unofficial 4th installment of the fantasy trilogy Guardians of Time by Marianne Curley.",
-      "annotation": "The battle is over, the prophecy has been fulfilled. However, it is not yet the end. The Guardians discover that Lathenie had been hiding her daughter Ellathea from them for several years, who immediately takes her mother's place as the Mistress of Chaos. She demonstrates her powerful abilities to the Guardians and wreaks havoc after destroying the entire Organization. Until a new short prophecy appears, revealing an ancient secret about four powerful weapons. In Ellathea's hands, they would be instruments for the destruction of Earth, and therefore the Guardians set out into distant history and all corners of the world to find these weapons before Ellathea. Will they succeed? Another battle is looming?"
+      "description": "The unofficial fourth episode of the fantasy trilogy Guardians of Time by Marianne Curley.",
+      "annotation": "The battle was over, the prophecy fulfilled. It was far from over however as the Guardians discover that Lathenia has been hiding her daughter Ellathea for years and now she takes up the mantle of the Queen of Chaos after her mother. She shows the guardians her mighty powers and desires nothing more than the total destruction of their organization. A new prophecy appears foretelling of four powerful weapons. In Ellathea's hands, they could undo Earth itself and so our Guardians embark across histories from all the corners of the world to find these weapons before the new Queen of Chaos. Will they succeed? Is there another battle to be fought?"
     },
     "preview": "Book preview",
     "chapterTitle": {
-      "DANIEL": "Daniel’s perspective",
-      "MAJDA": "Majda’s perspective",
+      "DANIEL": "Daniel's perspective",
+      "MAJDA": "Majda's perspective",
 
       "STRAZCI_PROLOG": "Prologue",
-      "STRAZCI_MATT": "Matt’s perspective",
-      "STRAZCI_ISABELA": "Isabela’s perspective"
+      "STRAZCI_MATT": "Matt's perspective",
+      "STRAZCI_ISABELA": "Isabela's perspective"
     },
 
     "chapter": {
@@ -90,6 +93,7 @@
 
   "stories": {
     "title": "Stories",
+    "metaDescription": "Read short stories including reflections on life, beauty, and other topics.",
     "sen": {
       "title": "Dream of Human Immortality",
       "description": "A reflection on immortality and the meaning of life."
